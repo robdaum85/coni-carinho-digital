@@ -18,7 +18,19 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+				'dm-serif': ['"DM Serif Display"', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'open-sans': ['"Open Sans"', 'sans-serif'],
+			},
 			colors: {
+				coni: {
+					pink: '#c60b65',
+					'light-pink': '#fff8ee',
+					white: '#ffffff',
+					dark: '#333333',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
