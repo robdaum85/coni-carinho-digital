@@ -1,5 +1,5 @@
 
-import { Calendar, Check, Heart, Hospital, Instagram, Mail, Phone, Plus, Syringe, User, Users } from "lucide-react";
+import { Calendar, Check, Heart, Hospital, Instagram, Mail, Phone, Plus, Users } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
@@ -57,73 +57,77 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-coni-light-pink">
       <SEOTags />
       <Header />
       <WhatsAppButton />
       <ScrollToTop />
 
       {/* Hero Section */}
-      <section className="relative pt-24 min-h-screen flex items-center hero-section">
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="container mx-auto px-4 z-10 py-20">
-          <div className="max-w-3xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-dm-serif mb-6 animate-fadeIn" style={{ animationDelay: "0.2s" }}>
+      <section
+        className="relative min-h-[80vh] flex items-center justify-center"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(198,11,101,0.26), rgba(255,248,238,0.82)), url('https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=1500&q=80'), url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1500&q=80')"
+        }}
+      >
+        <div className="container mx-auto px-4 z-10 py-24 flex flex-col items-center">
+          <div className="max-w-3xl text-center text-coni-dark bg-white/65 rounded-3xl px-6 py-10 backdrop-blur-[2px] shadow-xl border border-white/30">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-dm-serif mb-6 animate-fadeIn font-bold text-coni-pink drop-shadow-md">
               Parto Humanizado e Obstetrícia de Alto Risco com Atenção Integral
             </h1>
-            <p className="text-xl md:text-2xl mb-8 font-light animate-fadeIn" style={{ animationDelay: "0.6s" }}>
+            <p className="text-xl md:text-2xl mb-8 font-light animate-fadeIn text-coni-dark/80">
               Acompanhamento pré-natal personalizado e seguro em Curitiba e região.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeIn" style={{ animationDelay: "1s" }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fadeIn">
               <a
-                href="https://wa.me/5541999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20pré-natal%20com%20a%20Dra.%20Coni%20Waldow" 
+                href="https://wa.me/5541999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20pré-natal%20com%20a%20Dra.%20Coni%20Waldow"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-coni-pink hover:bg-coni-pink/90 text-white font-medium rounded-full transition-colors"
+                className="px-7 py-3 bg-coni-pink hover:bg-coni-pink/90 text-white font-medium rounded-full shadow-lg transition duration-200"
               >
                 Agendar Pré-Natal
               </a>
               <a
                 href="#sobre"
-                className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white/10 text-white font-medium rounded-full transition-colors"
+                className="px-7 py-3 bg-transparent border-2 border-coni-pink hover:bg-coni-pink/10 text-coni-pink font-medium rounded-full transition-colors"
               >
                 Conheça Meu Trabalho
               </a>
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-24 section-fade"></div>
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="py-16 md:py-20 bg-coni-light-pink">
+      <section id="sobre" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-3xl md:text-4xl font-dm-serif mb-6 text-coni-pink">
+              <h2 className="text-3xl md:text-4xl font-dm-serif mb-6 text-coni-pink font-semibold">
                 Sobre a Dra. Coni
               </h2>
               <p className="text-lg mb-6 text-coni-dark">
-                Dra. Coni é médica formada pela UFPR, com residência em Ginecologia e 
+                Dra. Coni é médica formada pela UFPR, com residência em Ginecologia e
                 Obstetrícia pela UFPR e especialização em Obstetrícia de Alto Risco pela UNIFESP.
               </p>
               <p className="text-lg mb-6 text-coni-dark">
-                Atua com foco em gestantes com trombofilias, diabetes gestacional, hipertensão 
+                Atua com foco em gestantes com trombofilias, diabetes gestacional, hipertensão
                 e lúpus. Atendimento humanizado e empático desde o pré-natal até o parto.
               </p>
               <div className="mt-8">
                 <a
                   href="#contato"
-                  className="px-6 py-3 bg-coni-pink hover:bg-coni-pink/90 text-white font-medium rounded-full transition-colors inline-block"
+                  className="px-6 py-3 bg-coni-pink hover:bg-coni-pink/90 text-white font-medium rounded-full transition-colors inline-block shadow-md"
                 >
                   Entre em contato
                 </a>
               </div>
             </div>
-            <div className="order-1 md:order-2">
-              <div className="rounded-2xl overflow-hidden shadow-xl">
+            <div className="order-1 md:order-2 flex justify-center">
+              <div className="rounded-3xl overflow-hidden shadow-xl border border-coni-pink/30 w-full max-w-xs md:max-w-md bg-coni-light-pink">
                 <img
-                  src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?q=80&w=1470&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=640&q=80"
                   alt="Dra. Coni Waldow"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -135,10 +139,10 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="servicos" className="py-16 md:py-20">
+      <section id="servicos" className="py-16 md:py-24 bg-coni-light-pink">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-dm-serif mb-4 text-coni-pink">
+            <h2 className="text-3xl md:text-4xl font-dm-serif mb-4 text-coni-pink font-semibold">
               Serviços Oferecidos
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -146,7 +150,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -159,9 +163,9 @@ const Index = () => {
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="rounded-2xl overflow-hidden shadow-xl">
+              <div className="rounded-3xl overflow-hidden shadow-xl border border-coni-pink/20 bg-white">
                 <img
-                  src="https://images.unsplash.com/photo-1631046073935-456c3a38e17b?q=80&w=1470&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80"
                   alt="Consulta médica com Dra. Coni"
                   className="w-full h-auto object-cover"
                   loading="lazy"
@@ -173,11 +177,11 @@ const Index = () => {
                 Atendimento personalizado para cada paciente
               </h3>
               <p className="text-lg mb-6 text-gray-600">
-                Cada gestação é única e merece atenção individualizada. O cuidado 
+                Cada gestação é única e merece atenção individualizada. O cuidado
                 pré-natal é adaptado às necessidades específicas de cada mãe e bebê.
               </p>
               <p className="text-lg text-gray-600">
-                Com formação especializada em obstetrícia de alto risco, Dra. Coni 
+                Com formação especializada em obstetrícia de alto risco, Dra. Coni
                 proporciona segurança e tranquilidade mesmo em casos mais complexos.
               </p>
             </div>
@@ -186,10 +190,22 @@ const Index = () => {
       </section>
 
       {/* Differentials Section */}
-      <section id="diferenciais" className="py-20 bg-coni-light-pink relative">
+      <section id="diferenciais" className="py-20 bg-white relative">
+        <div
+          className="absolute inset-0 -z-10 opacity-50"
+          style={{
+            background:
+              "linear-gradient(120deg, #fff8ee 60%, #c60b65 100%)",
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80')",
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center'
+          }}
+        />
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-dm-serif mb-4 text-coni-pink">
+            <h2 className="text-3xl md:text-4xl font-dm-serif mb-4 text-coni-pink font-semibold">
               Diferenciais
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -199,9 +215,9 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {differentials.map((item, index) => (
-              <div key={index} className="flex gap-4 items-start bg-white p-6 rounded-lg shadow-md">
-                <div className="p-2 bg-coni-pink bg-opacity-10 text-coni-pink rounded-full shrink-0">
-                  <Check size={20} />
+              <div key={index} className="flex gap-4 items-start bg-white/80 border border-coni-pink/10 p-6 rounded-2xl shadow-md transition hover:shadow-lg">
+                <div className="p-2 bg-coni-pink bg-opacity-10 text-coni-pink rounded-full shrink-0 mt-0.5">
+                  <Check size={22} />
                 </div>
                 <div>
                   <h3 className="text-xl font-medium mb-2 text-coni-dark">{item.title}</h3>
@@ -213,10 +229,10 @@ const Index = () => {
 
           <div className="mt-16 text-center">
             <a
-              href="https://wa.me/5541999999999" // Replace with actual WhatsApp number
+              href="https://wa.me/5541999999999"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-coni-pink hover:bg-coni-pink/90 text-white font-medium rounded-full transition-colors inline-block"
+              className="px-8 py-4 bg-coni-pink hover:bg-coni-pink/90 text-white font-medium rounded-full shadow-md transition-colors inline-block"
             >
               Agende sua consulta
             </a>
@@ -225,18 +241,18 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contato" className="py-16 md:py-20">
+      <section id="contato" className="py-16 md:py-24 bg-coni-light-pink">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-dm-serif mb-4 text-coni-pink">
+              <h2 className="text-3xl md:text-4xl font-dm-serif mb-4 text-coni-pink font-semibold">
                 Entre em Contato
               </h2>
               <p className="text-lg mb-8 text-gray-600">
                 Estou à disposição para esclarecer suas dúvidas e agendar sua consulta.
                 Preencha o formulário e entraremos em contato o mais breve possível.
               </p>
-              
+
               <div className="mb-8">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="p-3 bg-coni-pink bg-opacity-10 text-coni-pink rounded-full">
@@ -247,7 +263,7 @@ const Index = () => {
                     <p className="text-gray-600">(41) 99999-9999</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4 mb-4">
                   <div className="p-3 bg-coni-pink bg-opacity-10 text-coni-pink rounded-full">
                     <Mail size={20} />
@@ -257,7 +273,7 @@ const Index = () => {
                     <p className="text-gray-600">contato@draconiwaldow.com.br</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-coni-pink bg-opacity-10 text-coni-pink rounded-full">
                     <Instagram size={20} />
@@ -268,18 +284,18 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              
-              <div className="rounded-2xl overflow-hidden shadow-xl hidden md:block">
+
+              <div className="rounded-2xl overflow-hidden shadow-xl hidden md:block border border-coni-pink/20 bg-white">
                 <img
-                  src="https://images.unsplash.com/photo-1494386346843-e12284507169?q=80&w=1470&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=700&q=80"
                   alt="Família feliz com recém-nascido"
                   className="w-full h-auto object-cover"
                   loading="lazy"
                 />
               </div>
             </div>
-            
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+
+            <div className="bg-white rounded-3xl shadow-xl p-8 border border-coni-pink/10">
               <ContactForm />
             </div>
           </div>
@@ -292,3 +308,4 @@ const Index = () => {
 };
 
 export default Index;
+
