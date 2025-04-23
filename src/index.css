@@ -180,7 +180,7 @@
   }
   
   .testimonial-card::before {
-    content: "";
+    content: open-quote;
     position: absolute;
     top: 0;
     left: 12px;
