@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,10 +98,14 @@
 
   body {
     @apply bg-background text-foreground font-inter scroll-smooth;
+    background-color: #fff8ee;
+    background-image: 
+      radial-gradient(at 30% 20%, rgba(198, 11, 101, 0.05) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(198, 11, 101, 0.08) 0px, transparent 50%);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-poppins;
+    @apply font-dm-serif;
   }
   
   @keyframes fadeIn {
@@ -117,20 +122,72 @@
   .animate-fadeIn {
     animation: fadeIn 1s ease-out forwards;
   }
-  
-  .hero-section {
-    background-image: url('https://images.unsplash.com/photo-1585400799278-3a72971bbfd1?q=80&w=1470&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center;
+
+  /* Brushstroke styling for headings */
+  .brush-title {
+    position: relative;
+    display: inline-block;
   }
   
-  @media (max-width: 768px) {
-    .hero-section {
-      background-position: 70% center;
-    }
+  .brush-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: rgba(198, 11, 101, 0.2);
+    border-radius: 10px;
+    transform: skew(-12deg);
+  }
+  
+  /* Artistic card styling */
+  .art-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 248, 238, 0.9));
+    border: 1px solid rgba(198, 11, 101, 0.1);
+    backdrop-filter: blur(5px);
+  }
+
+  /* Painterly background */
+  .painterly-bg {
+    background-color: #fff8ee;
+    background-image: 
+      radial-gradient(at 30% 20%, rgba(198, 11, 101, 0.05) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(198, 11, 101, 0.08) 0px, transparent 50%);
+  }
+  
+  /* Hero section styling */
+  .hero-section {
+    position: relative;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 248, 238, 0.4);
+    z-index: -1;
   }
 
   .section-fade {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+  
+  /* Testimonial card styling */
+  .testimonial-card {
+    @apply rounded-2xl p-6 shadow-md relative border-2 border-white/70;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 248, 238, 0.8));
+    backdrop-filter: blur(5px);
+  }
+  
+  .testimonial-card::before {
+    content: """;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    font-size: 5rem;
+    line-height: 1;
+    font-family: 'DM Serif Display', serif;
+    color: rgba(198, 11, 101, 0.1);
   }
 }
