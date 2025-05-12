@@ -9,7 +9,7 @@ const WhatsAppButton = () => {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 text-white bg-coni-pink rounded-full shadow-lg hover:bg-coni-pink/90 transition-all duration-300 animate-pulse"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 text-white bg-primary rounded-full shadow-lg hover:bg-primary/90 transition-all duration-300 animate-pulse"
       aria-label="Chat on WhatsApp"
     >
       <MessageCircle size={28} />

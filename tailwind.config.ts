@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,9 +26,14 @@ export default {
 				'open-sans': ['"Open Sans"', 'sans-serif'],
 			},
 			colors: {
+				primary: '#f58f9c',
+				secondary: '#efc3c2',
+				accent: '#fff1f0',
+				background: '#f9f9ee',
+				'text-secondary': '#63605d',
 				coni: {
-					pink: '#c60b65',
-					'light-pink': '#fff8ee',
+					pink: '#f58f9c',  // Updated to match primary
+					'light-pink': '#fff1f0',  // Updated to match accent
 					white: '#ffffff',
 					dark: '#333333',
 				},

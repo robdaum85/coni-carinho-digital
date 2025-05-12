@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 347 84% 76%;  /* #f58f9c */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 359 52% 85%;  /* #efc3c2 */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 0 100% 97%;  /* #fff1f0 */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,24 +31,17 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 347 84% 76%;  /* #f58f9c */
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -61,16 +55,16 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 347 84% 76%;  /* #f58f9c */
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 359 52% 85%;  /* #efc3c2 */
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 0 100% 97%;  /* #fff1f0 */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -78,7 +72,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 347 84% 76%;  /* #f58f9c */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -97,10 +91,10 @@
 
   body {
     @apply bg-background text-foreground font-inter scroll-smooth;
-    background-color: #fff8ee;
+    background-color: #f9f9ee;
     background-image: 
-      radial-gradient(at 30% 20%, rgba(198, 11, 101, 0.05) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, rgba(198, 11, 101, 0.08) 0px, transparent 50%);
+      radial-gradient(at 30% 20%, rgba(245, 143, 156, 0.05) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(245, 143, 156, 0.08) 0px, transparent 50%);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -135,24 +129,24 @@
     left: 0;
     height: 8px;
     width: 100%;
-    background: rgba(198, 11, 101, 0.2);
+    background: rgba(245, 143, 156, 0.2);
     border-radius: 10px;
     transform: skew(-12deg);
   }
   
   /* Artistic card styling */
   .art-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 248, 238, 0.9));
-    border: 1px solid rgba(198, 11, 101, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 241, 240, 0.9));
+    border: 1px solid rgba(245, 143, 156, 0.1);
     backdrop-filter: blur(5px);
   }
 
   /* Painterly background */
   .painterly-bg {
-    background-color: #fff8ee;
+    background-color: #f9f9ee;
     background-image: 
-      radial-gradient(at 30% 20%, rgba(198, 11, 101, 0.05) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, rgba(198, 11, 101, 0.08) 0px, transparent 50%);
+      radial-gradient(at 30% 20%, rgba(245, 143, 156, 0.05) 0px, transparent 50%),
+      radial-gradient(at 80% 50%, rgba(245, 143, 156, 0.08) 0px, transparent 50%);
   }
   
   /* Hero section styling */
@@ -164,7 +158,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(255, 248, 238, 0.4);
+    background-color: rgba(249, 249, 238, 0.4);
     z-index: -1;
   }
 
@@ -175,7 +169,7 @@
   /* Testimonial card styling */
   .testimonial-card {
     @apply rounded-2xl p-6 shadow-md relative border-2 border-white/70;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 248, 238, 0.8));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 241, 240, 0.8));
     backdrop-filter: blur(5px);
   }
   
@@ -187,6 +181,6 @@
     font-size: 5rem;
     line-height: 1;
     font-family: 'DM Serif Display', serif;
-    color: rgba(198, 11, 101, 0.1);
+    color: rgba(245, 143, 156, 0.1);
   }
 }
