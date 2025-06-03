@@ -48,7 +48,7 @@ const ModernAbout = () => {
           <div className="flex justify-center lg:justify-end fade-in">
             <div className="rounded-2xl overflow-hidden shadow-2xl w-full max-w-md lg:max-w-lg transition-transform duration-300 hover:-translate-y-2">
               <img
-                src="/lovable-uploads/48c699a6-333d-4f18-b61e-40561fde5197.png"
+                src="/lovable-uploads/46c8404b-585c-4e04-808d-408e99eeaddc.png"
                 alt="Dra. Coni Waldow em atendimento profissional"
                 className="w-full h-auto object-cover"
                 loading="lazy"
