@@ -77,8 +77,9 @@
   }
 
   body {
-    @apply bg-modern-background text-modern-text-primary font-inter scroll-smooth;
+    @apply font-inter scroll-smooth;
     background-color: #FAFAF8;
+    color: #262626;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -127,7 +128,7 @@
 
   /* Modern button styles */
   .btn-primary {
-    @apply bg-modern-primary text-white px-7 py-3 rounded-full font-inter font-medium transition-all duration-300 hover:scale-105;
+    @apply bg-primary text-white px-7 py-3 rounded-full font-inter font-medium transition-all duration-300 hover:scale-105;
     box-shadow: 0 8px 16px rgba(217, 79, 126, 0.3);
   }
 
@@ -140,7 +141,7 @@
   }
 
   .btn-secondary:hover {
-    @apply bg-modern-primary border-modern-primary;
+    @apply bg-primary border-primary;
   }
 
   /* Modern card styles */
@@ -188,11 +189,19 @@
 
   .floating-label input,
   .floating-label textarea {
-    @apply w-full px-4 py-4 border border-gray-300 rounded-lg font-inter text-modern-text-primary bg-white transition-all duration-300 focus:border-modern-primary focus:outline-none;
+    @apply w-full px-4 py-4 border border-gray-300 rounded-lg font-inter bg-white transition-all duration-300 focus:outline-none;
+    color: #262626;
+    border-color: #ccc;
+  }
+
+  .floating-label input:focus,
+  .floating-label textarea:focus {
+    border-color: #e65a7e;
   }
 
   .floating-label label {
-    @apply absolute left-4 top-4 font-inter text-modern-text-muted bg-white px-1 transition-all duration-300 pointer-events-none;
+    @apply absolute left-4 top-4 font-inter bg-white px-1 transition-all duration-300 pointer-events-none;
+    color: #555;
     transform: translateY(0);
   }
 
@@ -200,7 +209,8 @@
   .floating-label input:not(:placeholder-shown) + label,
   .floating-label textarea:focus + label,
   .floating-label textarea:not(:placeholder-shown) + label {
-    @apply text-modern-primary text-xs;
+    @apply text-xs;
+    color: #e65a7e;
     transform: translateY(-2rem);
   }
 
@@ -216,7 +226,7 @@
     left: 0;
     height: 4px;
     width: 4rem;
-    background: #D94F7E;
+    background: #e65a7e;
     border-radius: 2px;
   }
 
