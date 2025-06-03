@@ -18,8 +18,8 @@ const ModernHeader = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-header h-20">
-      <div className="container mx-auto px-4 h-full flex justify-between items-center max-w-6xl">
+    <header className="fixed top-0 left-0 right-0 z-50 glass-header">
+      <div className="container mx-auto px-4 h-20 flex justify-between items-center max-w-6xl">
         {/* Logo */}
         <div className="flex items-center">
           <h1 className="text-primary text-xl font-playfair font-medium">
@@ -42,25 +42,25 @@ const ModernHeader = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection('sobre')}
-            className="text-gray-600 hover:text-primary transition-colors font-inter font-semibold"
+            className="text-gray-600 hover:text-primary transition-colors font-inter font-medium"
           >
             Sobre
           </button>
           <button 
             onClick={() => scrollToSection('servicos')}
-            className="text-gray-600 hover:text-primary transition-colors font-inter font-semibold"
+            className="text-gray-600 hover:text-primary transition-colors font-inter font-medium"
           >
             Serviços
           </button>
           <button 
             onClick={() => scrollToSection('diferenciais')}
-            className="text-gray-600 hover:text-primary transition-colors font-inter font-semibold"
+            className="text-gray-600 hover:text-primary transition-colors font-inter font-medium"
           >
             Diferenciais
           </button>
           <button 
             onClick={() => scrollToSection('contato')}
-            className="text-gray-600 hover:text-primary transition-colors font-inter font-semibold"
+            className="text-gray-600 hover:text-primary transition-colors font-inter font-medium"
           >
             Contato
           </button>
@@ -78,7 +78,7 @@ const ModernHeader = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-white/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center">
+        <div className="md:hidden fixed inset-0 bg-white bg-opacity-95 backdrop-blur-lg z-40 flex flex-col items-center justify-center">
           <div className="flex flex-col space-y-8 text-center">
             <button
               onClick={() => scrollToSection('sobre')}

@@ -8,12 +8,12 @@ const ModernAbout = () => {
   };
 
   return (
-    <section id="sobre" className="py-20" style={{ backgroundColor: '#FAFAF8' }}>
+    <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="order-2 md:order-1 animate-fade-in-up">
-            <h2 className="section-title text-primary font-playfair font-medium mb-6">
+          <div className="fade-in">
+            <h2 className="section-title">
               Sobre a Dra. Coni Waldow
             </h2>
             
@@ -28,7 +28,7 @@ const ModernAbout = () => {
               ou casos mais delicados como trombofilias, hipertensão, diabetes gestacional ou lúpus.
             </p>
             
-            <blockquote className="text-lg mb-8 font-playfair italic text-primary leading-relaxed border-l-4 border-primary pl-6">
+            <blockquote className="text-xl mb-8 font-playfair italic text-primary leading-relaxed border-l-4 border-primary pl-6">
               "Cada gestação é única. Cada mulher merece respeito, cuidado e um parto com segurança e dignidade."
             </blockquote>
             
@@ -41,8 +41,8 @@ const ModernAbout = () => {
           </div>
           
           {/* Image */}
-          <div className="order-1 md:order-2 flex justify-center animate-fade-in-up">
-            <div className="rounded-2xl overflow-hidden shadow-xl w-full max-w-md hover-lift">
+          <div className="flex justify-center fade-in">
+            <div className="rounded-2xl overflow-hidden shadow-xl w-full max-w-md transition-transform duration-300 hover:-translate-y-2">
               <img
                 src="/lovable-uploads/8ef1a133-96f7-4730-b115-b5050e3e2b72.png"
                 alt="Dra. Coni Waldow em atendimento profissional"
