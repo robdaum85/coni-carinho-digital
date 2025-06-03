@@ -15,7 +15,7 @@ const ModernHero = () => {
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
         <img 
-          src="/lovable-uploads/48c699a6-333d-4f18-b61e-40561fde5197.png" 
+          src="/lovable-uploads/221b086f-bb6c-4c45-aab6-5ccea0a9af30.png" 
           alt="Consultório acolhedor da Dra. Coni Waldow" 
           className="w-full h-full object-cover"
         />
