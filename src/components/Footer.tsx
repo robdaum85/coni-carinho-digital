@@ -7,68 +7,72 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center md:items-start">
-            <h2 className="text-2xl font-dm-serif mb-4">Dra. Coni Waldow</h2>
-            <p className="text-sm opacity-80 text-center md:text-left">
+            <h2 className="text-2xl font-playfair mb-4">Dra. Coni Waldow</h2>
+            <p className="text-sm opacity-85 text-center md:text-left font-inter">
               Obstetrícia humanizada e de alto risco em Curitiba e região.
             </p>
           </div>
           
           <div className="flex flex-col items-center">
-            <h3 className="text-xl font-medium mb-4">Contato</h3>
-            <div className="space-y-2">
+            <h3 className="text-xl font-inter font-semibold mb-4">Contato</h3>
+            <div className="space-y-3">
               <a
-                href="https://wa.me/5541999999999" // Replace with actual WhatsApp number
+                href="https://wa.me/5541999999999"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:underline"
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
               >
-                <Phone size={18} />
-                <span>(41) 99999-9999</span>
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <Phone size={18} className="text-coni-pink" />
+                </div>
+                <span className="font-inter">(41) 99999-9999</span>
               </a>
               <a
                 href="mailto:contato@draconiwaldow.com.br"
-                className="flex items-center gap-2 hover:underline"
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
               >
-                <Mail size={18} />
-                <span>contato@draconiwaldow.com.br</span>
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <Mail size={18} className="text-coni-pink" />
+                </div>
+                <span className="font-inter">contato@draconiwaldow.com.br</span>
               </a>
             </div>
           </div>
           
           <div className="flex flex-col items-center md:items-end">
-            <h3 className="text-xl font-medium mb-4">Redes Sociais</h3>
+            <h3 className="text-xl font-inter font-semibold mb-4">Redes Sociais</h3>
             <div className="flex gap-4">
               <a
                 href="https://instagram.com/draconiwaldow"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="p-2 bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-colors"
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"
               >
-                <Instagram size={20} />
+                <Instagram size={20} className="text-coni-pink" />
               </a>
               <a
-                href="https://wa.me/5541999999999" // Replace with actual WhatsApp number
+                href="https://wa.me/5541999999999"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
-                className="p-2 bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-colors"
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"
               >
-                <Phone size={20} />
+                <Phone size={20} className="text-coni-pink" />
               </a>
               <a
                 href="mailto:contato@draconiwaldow.com.br"
                 aria-label="Email"
-                className="p-2 bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-colors"
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"
               >
-                <Mail size={20} />
+                <Mail size={20} className="text-coni-pink" />
               </a>
             </div>
           </div>
         </div>
         
-        <div className="mt-12 pt-4 border-t border-white border-opacity-20 text-center">
-          <p className="text-sm opacity-70">
+        <div className="mt-8 pt-6 border-t border-white/20 text-center">
+          <p className="text-sm opacity-80 font-inter">
             © 2025 Dra. Coni Waldow | Todos os direitos reservados
           </p>
         </div>

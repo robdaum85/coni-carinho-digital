@@ -20,36 +20,31 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'poppins': ['Poppins', 'sans-serif'],
-				'dm-serif': ['"DM Serif Display"', 'serif'],
+				'playfair': ['"Playfair Display"', 'serif'],
 				'inter': ['Inter', 'sans-serif'],
-				'open-sans': ['"Open Sans"', 'sans-serif'],
 			},
 			colors: {
-				primary: '#f58f9c',
-				secondary: '#efc3c2',
-				accent: '#fff1f0',
-				background: '#f9f9ee',
-				'text-secondary': '#63605d',
+				// New color palette as specified
+				primary: '#e65a7e',
+				secondary: '#ffe4ea',
+				accent: '#ffe4ea',
+				background: '#faf8f4',
+				'text-primary': '#262626',
+				'text-secondary': '#444',
+				'text-muted': '#555',
 				coni: {
-					pink: '#f58f9c',  // Updated to match primary
-					'light-pink': '#fff1f0',  // Updated to match accent
+					pink: '#e65a7e',
+					'light-pink': '#ffe4ea',
+					beige: '#faf8f4',
+					'text-primary': '#262626',
+					'text-secondary': '#444',
+					'text-muted': '#555',
 					white: '#ffffff',
-					dark: '#333333',
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
-				},
-				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
-				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
@@ -57,10 +52,6 @@ export default {
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
-				},
-				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
@@ -102,11 +93,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'bounce': {
+					'0%, 100%': {
+						transform: 'translateY(-25%)',
+						animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)'
+					},
+					'50%': {
+						transform: 'translateY(0)',
+						animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)'
+					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce': 'bounce 2s infinite',
+				'fade-in': 'fade-in 0.6s ease-out'
 			}
 		}
 	},

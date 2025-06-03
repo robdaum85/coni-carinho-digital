@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,16 +17,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 347 84% 76%;  /* #f58f9c */
+    --primary: 350 67% 61%;  /* #e65a7e */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 359 52% 85%;  /* #efc3c2 */
+    --secondary: 0 100% 93%;  /* #ffe4ea */
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 0 100% 97%;  /* #fff1f0 */
+    --accent: 0 100% 93%;  /* #ffe4ea */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +34,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 347 84% 76%;  /* #f58f9c */
+    --ring: 350 67% 61%;  /* #e65a7e */
 
     --radius: 0.5rem;
 
@@ -55,16 +58,16 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 347 84% 76%;  /* #f58f9c */
+    --primary: 350 67% 61%;  /* #e65a7e */
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 359 52% 85%;  /* #efc3c2 */
+    --secondary: 0 100% 93%;  /* #ffe4ea */
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 0 100% 97%;  /* #fff1f0 */
+    --accent: 0 100% 93%;  /* #ffe4ea */
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -72,7 +75,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 347 84% 76%;  /* #f58f9c */
+    --ring: 350 67% 61%;  /* #e65a7e */
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -90,17 +93,29 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter scroll-smooth;
-    background-color: #f9f9ee;
-    background-image: 
-      radial-gradient(at 30% 20%, rgba(245, 143, 156, 0.05) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, rgba(245, 143, 156, 0.08) 0px, transparent 50%);
+    @apply bg-coni-beige text-coni-text-primary font-inter scroll-smooth;
+    background-color: #faf8f4;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-dm-serif;
+    @apply font-playfair;
   }
   
+  /* Hero bounce animation for scroll indicator */
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+  }
+
+  /* Fade in animation */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -116,7 +131,7 @@
     animation: fadeIn 1s ease-out forwards;
   }
 
-  /* Brushstroke styling for headings */
+  /* Brush title styling */
   .brush-title {
     position: relative;
     display: inline-block;
@@ -125,62 +140,52 @@
   .brush-title::after {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: -8px;
     left: 0;
-    height: 8px;
-    width: 100%;
-    background: rgba(245, 143, 156, 0.2);
-    border-radius: 10px;
-    transform: skew(-12deg);
-  }
-  
-  /* Artistic card styling */
-  .art-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 241, 240, 0.9));
-    border: 1px solid rgba(245, 143, 156, 0.1);
-    backdrop-filter: blur(5px);
+    height: 4px;
+    width: 48px;
+    background: #ffe4ea;
+    border-radius: 2px;
   }
 
-  /* Painterly background */
-  .painterly-bg {
-    background-color: #f9f9ee;
-    background-image: 
-      radial-gradient(at 30% 20%, rgba(245, 143, 156, 0.05) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, rgba(245, 143, 156, 0.08) 0px, transparent 50%);
+  /* Service card styling */
+  .service-card {
+    @apply bg-white rounded-xl shadow-sm p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
   }
   
-  /* Hero section styling */
-  .hero-section {
-    position: relative;
-  }
-  
-  .hero-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(249, 249, 238, 0.4);
-    z-index: -1;
+  .icon-circle {
+    @apply w-16 h-16 rounded-full bg-coni-light-pink flex items-center justify-center mx-auto mb-4;
   }
 
-  .section-fade {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  /* Differential card styling */
+  .differential-card {
+    @apply bg-white rounded-xl shadow-sm p-6 flex items-start gap-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg;
   }
-  
+
   /* Testimonial card styling */
   .testimonial-card {
-    @apply rounded-2xl p-6 shadow-md relative border-2 border-white/70;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 241, 240, 0.8));
-    backdrop-filter: blur(5px);
+    @apply bg-white rounded-xl shadow-sm p-6 relative;
   }
   
   .testimonial-card::before {
     content: open-quote;
     position: absolute;
-    top: 0;
-    left: 12px;
-    font-size: 5rem;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5rem;
     line-height: 1;
-    font-family: 'DM Serif Display', serif;
-    color: rgba(245, 143, 156, 0.1);
+    font-family: 'Playfair Display', serif;
+    color: rgba(255, 228, 234, 0.6);
   }
-}
+
+  /* Contact form styling */
+  .contact-form {
+    @apply bg-white rounded-2xl shadow-lg p-6;
+  }
+
+  /* Glass effect for header */
+  .glass-header {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+</layer>
