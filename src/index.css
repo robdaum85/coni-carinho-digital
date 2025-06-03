@@ -10,34 +10,24 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 350 67% 61%;  /* #e65a7e */
+    --primary: 350 67% 61%;
     --primary-foreground: 210 40% 98%;
-
-    --secondary: 0 100% 93%;  /* #ffe4ea */
+    --secondary: 0 100% 93%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 0 100% 93%;  /* #ffe4ea */
+    --accent: 0 100% 93%;
     --accent-foreground: 222.2 47.4% 11.2%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 350 67% 61%;  /* #e65a7e */
-
+    --ring: 350 67% 61%;
     --radius: 0.5rem;
-
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -51,31 +41,23 @@
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
-    --primary: 350 67% 61%;  /* #e65a7e */
+    --primary: 350 67% 61%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 0 100% 93%;  /* #ffe4ea */
+    --secondary: 0 100% 93%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 0 100% 93%;  /* #ffe4ea */
+    --accent: 0 100% 93%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 350 67% 61%;  /* #e65a7e */
+    --ring: 350 67% 61%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -90,100 +72,182 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-coni-beige text-coni-text-primary font-inter scroll-smooth;
-    background-color: #faf8f4;
+    @apply bg-modern-background text-modern-text-primary font-inter scroll-smooth;
+    background-color: #FAFAF8;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-playfair;
   }
-  
-  /* Hero bounce animation for scroll indicator */
-  @keyframes bounce-slow {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+
+  /* Modern glass header */
+  .glass-header {
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: height 0.3s ease-in-out;
   }
-  
+
+  /* Modern animations */
   .animate-bounce-slow {
-    animation: bounce-slow 2s ease-in-out infinite;
+    animation: bounce-slow 0.8s ease-in-out infinite;
   }
 
-  /* Fade in animation */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-fadeIn {
-    animation: fadeIn 1s ease-out forwards;
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
   }
 
-  /* Brush title styling */
-  .brush-title {
-    position: relative;
-    display: inline-block;
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out;
   }
-  
-  .brush-title::after {
+
+  /* Modern hover effects */
+  .hover-scale {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-scale:hover {
+    @apply scale-105;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-1;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Modern button styles */
+  .btn-primary {
+    @apply bg-modern-primary text-white px-7 py-3 rounded-full font-inter font-medium transition-all duration-300 hover:scale-105;
+    box-shadow: 0 8px 16px rgba(217, 79, 126, 0.3);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 12px 24px rgba(217, 79, 126, 0.4);
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-white text-white px-7 py-3 rounded-full font-inter font-medium transition-all duration-300;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-modern-primary border-modern-primary;
+  }
+
+  /* Modern card styles */
+  .modern-card {
+    @apply bg-white rounded-xl p-8 transition-all duration-300;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .modern-card:hover {
+    @apply -translate-y-1;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Service card with icon */
+  .service-card {
+    @apply modern-card text-center flex flex-col items-center;
+  }
+
+  .service-icon {
+    @apply w-16 h-16 rounded-full flex items-center justify-center mb-6;
+    background-color: #FFE4EA;
+  }
+
+  /* Testimonial card styling */
+  .testimonial-card {
+    @apply modern-card relative;
+  }
+
+  .testimonial-card::before {
+    content: """;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 3rem;
+    line-height: 1;
+    font-family: 'Playfair Display', serif;
+    color: #FFE4EA;
+    opacity: 0.2;
+  }
+
+  /* Floating label for forms */
+  .floating-label {
+    @apply relative;
+  }
+
+  .floating-label input,
+  .floating-label textarea {
+    @apply w-full px-4 py-4 border border-gray-300 rounded-lg font-inter text-modern-text-primary bg-white transition-all duration-300 focus:border-modern-primary focus:outline-none;
+  }
+
+  .floating-label label {
+    @apply absolute left-4 top-4 font-inter text-modern-text-muted bg-white px-1 transition-all duration-300 pointer-events-none;
+    transform: translateY(0);
+  }
+
+  .floating-label input:focus + label,
+  .floating-label input:not(:placeholder-shown) + label,
+  .floating-label textarea:focus + label,
+  .floating-label textarea:not(:placeholder-shown) + label {
+    @apply text-modern-primary text-xs;
+    transform: translateY(-2rem);
+  }
+
+  /* Section title underline */
+  .section-title {
+    @apply relative inline-block;
+  }
+
+  .section-title::after {
     content: "";
     position: absolute;
     bottom: -8px;
     left: 0;
     height: 4px;
-    width: 48px;
-    background: #ffe4ea;
+    width: 4rem;
+    background: #D94F7E;
     border-radius: 2px;
   }
 
-  /* Service card styling */
-  .service-card {
-    @apply bg-white rounded-xl shadow-sm p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
-  }
-  
-  .icon-circle {
-    @apply w-16 h-16 rounded-full bg-coni-light-pink flex items-center justify-center mx-auto mb-4;
-  }
-
-  /* Differential card styling */
-  .differential-card {
-    @apply bg-white rounded-xl shadow-sm p-6 flex items-start gap-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg;
+  /* Responsive typography */
+  @media (max-width: 768px) {
+    .hero-title {
+      @apply text-2xl;
+    }
+    
+    .section-title {
+      @apply text-xl;
+    }
   }
 
-  /* Testimonial card styling */
-  .testimonial-card {
-    @apply bg-white rounded-xl shadow-sm p-6 relative;
-  }
-  
-  .testimonial-card::before {
-    content: open-quote;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 2.5rem;
-    line-height: 1;
-    font-family: 'Playfair Display', serif;
-    color: rgba(255, 228, 234, 0.6);
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .hero-title {
+      @apply text-3xl;
+    }
+    
+    .section-title {
+      @apply text-2xl;
+    }
   }
 
-  /* Contact form styling */
-  .contact-form {
-    @apply bg-white rounded-2xl shadow-lg p-6;
-  }
-
-  /* Glass effect for header */
-  .glass-header {
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.9);
+  @media (min-width: 1025px) {
+    .hero-title {
+      @apply text-5xl;
+    }
+    
+    .section-title {
+      @apply text-3xl;
+    }
   }
 }
