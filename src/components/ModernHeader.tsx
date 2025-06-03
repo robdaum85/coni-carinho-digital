@@ -19,7 +19,7 @@ const ModernHeader = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-header">
-      <div className="container mx-auto px-4 h-20 flex justify-between items-center max-w-6xl">
+      <div className="container mx-auto px-6 h-20 flex justify-between items-center max-w-7xl">
         {/* Logo */}
         <div className="flex items-center">
           <h1 className="text-primary text-xl font-playfair font-medium">
@@ -31,7 +31,7 @@ const ModernHeader = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="p-2 text-gray-600 focus:outline-none"
+            className="p-2 text-gray-600 focus:outline-none hover:text-primary transition-colors"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -78,29 +78,29 @@ const ModernHeader = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-white bg-opacity-95 backdrop-blur-lg z-40 flex flex-col items-center justify-center">
-          <div className="flex flex-col space-y-8 text-center">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg shadow-lg">
+          <div className="container mx-auto px-6 py-6 flex flex-col space-y-4">
             <button
               onClick={() => scrollToSection('sobre')}
-              className="text-2xl text-gray-600 hover:text-primary transition-colors font-inter"
+              className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection('servicos')}
-              className="text-2xl text-gray-600 hover:text-primary transition-colors font-inter"
+              className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection('diferenciais')}
-              className="text-2xl text-gray-600 hover:text-primary transition-colors font-inter"
+              className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg"
             >
               Diferenciais
             </button>
             <button
               onClick={() => scrollToSection('contato')}
-              className="text-2xl text-gray-600 hover:text-primary transition-colors font-inter"
+              className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg"
             >
               Contato
             </button>
@@ -108,7 +108,7 @@ const ModernHeader = () => {
               href="https://wa.me/5541999999999"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary flex items-center justify-center gap-2 w-64 mx-auto"
+              className="btn-primary flex items-center justify-center gap-2 mt-4"
             >
               <Calendar size={16} />
               Agendar Consulta

@@ -42,22 +42,24 @@
     @apply font-inter;
     background-color: #FAFAF8;
     color: #262626;
+    line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-playfair;
+    line-height: 1.2;
   }
 }
 
 @layer components {
   .glass-header {
     backdrop-filter: blur(12px);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
 
   .btn-primary {
-    @apply bg-primary text-white px-6 py-3 rounded-full font-inter font-medium transition-all duration-300 hover:scale-105;
+    @apply bg-primary text-white px-6 py-3 rounded-full font-inter font-medium transition-all duration-300 hover:scale-105 inline-flex items-center justify-center;
     box-shadow: 0 4px 12px rgba(230, 90, 126, 0.3);
   }
 
@@ -66,7 +68,8 @@
   }
 
   .section-title {
-    @apply text-2xl md:text-3xl lg:text-4xl font-playfair font-medium text-primary mb-6;
+    @apply text-3xl md:text-4xl lg:text-5xl font-playfair font-medium text-primary mb-8;
+    line-height: 1.2;
   }
 
   .section-title::after {
@@ -75,20 +78,20 @@
     width: 60px;
     height: 4px;
     background: #e65a7e;
-    margin-top: 8px;
+    margin-top: 12px;
     border-radius: 2px;
   }
 }
 
 @layer utilities {
   .fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 0.8s ease-out forwards;
   }
 
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
