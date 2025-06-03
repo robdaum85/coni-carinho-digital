@@ -13,7 +13,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-modern-background">
+    <div className="min-h-screen" style={{ backgroundColor: '#FAFAF8' }}>
       <ModernSEO />
       <ModernHeader />
       <WhatsAppButton />

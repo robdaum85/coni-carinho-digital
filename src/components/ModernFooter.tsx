@@ -3,7 +3,7 @@ import { Instagram, Mail, Phone } from "lucide-react";
 
 const ModernFooter = () => {
   return (
-    <footer className="bg-modern-primary text-white py-12">
+    <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
@@ -25,7 +25,7 @@ const ModernFooter = () => {
                 className="flex items-center gap-3 hover:opacity-80 transition-opacity group"
               >
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Phone size={18} className="text-modern-primary" />
+                  <Phone size={18} className="text-primary" />
                 </div>
                 <span className="font-inter">(41) 99999-9999</span>
               </a>
@@ -34,7 +34,7 @@ const ModernFooter = () => {
                 className="flex items-center gap-3 hover:opacity-80 transition-opacity group"
               >
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Mail size={18} className="text-modern-primary" />
+                  <Mail size={18} className="text-primary" />
                 </div>
                 <span className="font-inter">contato@draconiwaldow.com.br</span>
               </a>
@@ -52,7 +52,7 @@ const ModernFooter = () => {
                 aria-label="Instagram"
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"
               >
-                <Instagram size={20} className="text-modern-primary" />
+                <Instagram size={20} className="text-primary" />
               </a>
               <a
                 href="https://wa.me/5541999999999"
@@ -61,14 +61,14 @@ const ModernFooter = () => {
                 aria-label="WhatsApp"
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"
               >
-                <Phone size={20} className="text-modern-primary" />
+                <Phone size={20} className="text-primary" />
               </a>
               <a
                 href="mailto:contato@draconiwaldow.com.br"
                 aria-label="Email"
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform"
               >
-                <Mail size={20} className="text-modern-primary" />
+                <Mail size={20} className="text-primary" />
               </a>
             </div>
           </div>
