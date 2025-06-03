@@ -22,7 +22,7 @@ const ModernHeader = () => {
       <div className="container mx-auto px-4 h-full flex justify-between items-center max-w-6xl">
         {/* Logo */}
         <div className="flex items-center">
-          <h1 className="text-modern-primary text-xl font-playfair font-medium">
+          <h1 className="text-primary text-xl font-playfair font-medium">
             Dra. Coni Waldow
           </h1>
         </div>
@@ -31,7 +31,7 @@ const ModernHeader = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="p-2 text-modern-accent focus:outline-none"
+            className="p-2 text-gray-600 focus:outline-none"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -42,25 +42,25 @@ const ModernHeader = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection('sobre')}
-            className="text-modern-text-secondary hover:text-modern-primary transition-colors font-inter font-semibold"
+            className="text-gray-600 hover:text-primary transition-colors font-inter font-semibold"
           >
             Sobre
           </button>
           <button 
             onClick={() => scrollToSection('servicos')}
-            className="text-modern-text-secondary hover:text-modern-primary transition-colors font-inter font-semibold"
+            className="text-gray-600 hover:text-primary transition-colors font-inter font-semibold"
           >
             Serviços
           </button>
           <button 
             onClick={() => scrollToSection('diferenciais')}
-            className="text-modern-text-secondary hover:text-modern-primary transition-colors font-inter font-semibold"
+            className="text-gray-600 hover:text-primary transition-colors font-inter font-semibold"
           >
             Diferenciais
           </button>
           <button 
             onClick={() => scrollToSection('contato')}
-            className="text-modern-text-secondary hover:text-modern-primary transition-colors font-inter font-semibold"
+            className="text-gray-600 hover:text-primary transition-colors font-inter font-semibold"
           >
             Contato
           </button>
@@ -82,25 +82,25 @@ const ModernHeader = () => {
           <div className="flex flex-col space-y-8 text-center">
             <button
               onClick={() => scrollToSection('sobre')}
-              className="text-2xl text-modern-text-secondary hover:text-modern-primary transition-colors font-inter"
+              className="text-2xl text-gray-600 hover:text-primary transition-colors font-inter"
             >
               Sobre
             </button>
             <button
               onClick={() => scrollToSection('servicos')}
-              className="text-2xl text-modern-text-secondary hover:text-modern-primary transition-colors font-inter"
+              className="text-2xl text-gray-600 hover:text-primary transition-colors font-inter"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection('diferenciais')}
-              className="text-2xl text-modern-text-secondary hover:text-modern-primary transition-colors font-inter"
+              className="text-2xl text-gray-600 hover:text-primary transition-colors font-inter"
             >
               Diferenciais
             </button>
             <button
               onClick={() => scrollToSection('contato')}
-              className="text-2xl text-modern-text-secondary hover:text-modern-primary transition-colors font-inter"
+              className="text-2xl text-gray-600 hover:text-primary transition-colors font-inter"
             >
               Contato
             </button>
