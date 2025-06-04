@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X, Calendar } from "lucide-react";
 
@@ -21,7 +20,12 @@ const ModernHeader = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass-header">
       <div className="container mx-auto px-6 h-20 flex justify-between items-center max-w-7xl">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center space-x-3">
+          <img 
+            src="/lovable-uploads/394e917b-f476-43e0-9cb7-2a712c1e6c49.png"
+            alt="Logo Dra. Coni Waldow"
+            className="h-12 w-auto"
+          />
           <h1 className="text-primary text-xl font-playfair font-medium">
             Dra. Coni Waldow
           </h1>
