@@ -27,28 +27,28 @@ const ModernHero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center max-w-5xl py-0 my-[6px] pt-24 md:pt-0">
         <div className="fade-in space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-medium text-white leading-tight max-w-4xl mx-auto drop-shadow-lg">
-            Parto Humanizado, Obstetrícia de Alto Risco e Atenção à Saúde Integral da Mulher
+            Cuidado Humanizado em Todas as Fases da Sua Jornada
           </h1>
           
           <p className="text-xl md:text-2xl font-inter font-light text-white/95 leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-            Acolhimento completo e cuidado especializado em todas as fases da jornada feminina.
+            Do pré-natal ao parto, você merece um acompanhamento que respeita seus desejos e cuida de cada momento com carinho e segurança.
           </p>
           
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <a 
-              href="https://wa.me/5541999999999?text=Olá,%20gostaria%20de%20agendar%20um%20pré-natal%20com%20a%20Dra.%20Coni%20Waldow" 
+              href="https://wa.me/5541999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Coni%20Waldow" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-primary text-lg px-8 py-4 w-full sm:w-auto"
             >
-              Agendar Pré-Natal
+              Agende Sua Consulta
             </a>
             <button 
               onClick={() => scrollToSection('sobre')} 
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-inter font-medium text-lg transition-all duration-300 hover:bg-white hover:text-gray-900 w-full sm:w-auto"
             >
-              Conheça Meu Trabalho
+              Conheça Minha História
             </button>
           </div>
 

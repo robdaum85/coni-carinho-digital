@@ -19,14 +19,19 @@ const ModernAbout = () => {
             
             <div className="space-y-6 text-gray-700">
               <p className="text-lg leading-relaxed font-inter">
-                Sou médica formada pela UFPR com especialização em Ginecologia e Obstetrícia. 
-                Também sou especialista em Obstetrícia de Alto Risco pela UNIFESP.
+                Sou médica formada pela UFPR com especialização em Ginecologia e Obstetrícia, 
+                e especialista em Obstetrícia de Alto Risco pela UNIFESP. Atendo em Curitiba e região metropolitana.
               </p>
               
               <p className="text-lg leading-relaxed font-inter">
-                Minha missão é oferecer um atendimento acolhedor e seguro para gestantes, 
-                respeitando seus desejos e cuidando de cada detalhe — seja em gestações de baixo risco 
-                ou casos mais delicados como trombofilias, hipertensão, diabetes gestacional ou lúpus.
+                Acredito que cada gestação é única e que você merece um cuidado que vai além do protocolo médico. 
+                Meu compromisso é estar ao seu lado, oferecendo segurança técnica e acolhimento humano, 
+                seja em gestações de baixo risco ou em casos que demandam atenção especial.
+              </p>
+              
+              <p className="text-lg leading-relaxed font-inter">
+                Juntas, vamos construir uma experiência de maternidade que respeita suas escolhas 
+                e celebra esse momento tão especial da sua vida.
               </p>
               
               <blockquote className="text-xl font-playfair italic text-primary leading-relaxed border-l-4 border-primary pl-6 py-4 bg-white rounded-r-lg shadow-sm">
@@ -39,7 +44,7 @@ const ModernAbout = () => {
                 onClick={() => scrollToSection('contato')}
                 className="btn-primary"
               >
-                Entre em contato
+                Vamos conversar
               </button>
             </div>
           </div>

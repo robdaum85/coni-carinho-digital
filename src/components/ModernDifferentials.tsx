@@ -4,20 +4,20 @@ import { Check } from "lucide-react";
 const ModernDifferentials = () => {
   const differentials = [
     {
-      title: "Atendimento empático e humanizado",
-      description: "Escuta ativa e respeito às suas escolhas e individualidades em todos os momentos."
+      title: "Atendimento que realmente te escuta",
+      description: "Cada consulta é um espaço seguro onde suas dúvidas, medos e sonhos são acolhidos com carinho e respeito genuíno."
     },
     {
-      title: "Atendimento por convênio e particular",
-      description: "Flexibilidade de atendimento para maior acessibilidade às pacientes."
+      title: "Flexibilidade para seu conforto",
+      description: "Atendimento por convênio e particular, pensando na sua comodidade e necessidades financeiras."
     },
     {
-      title: "Disponibilidade via WhatsApp",
-      description: "Suporte e esclarecimento de dúvidas para maior tranquilidade durante a gestação."
+      title: "Sempre disponível para você",
+      description: "Suporte via WhatsApp para que você nunca se sinta sozinha, especialmente nos momentos de maior ansiedade."
     },
     {
-      title: "Experiência com casos de alto risco",
-      description: "Segurança e expertise para o manejo de gestações complexas e situações especiais."
+      title: "Segurança em casos complexos",
+      description: "Experiência especializada em alto risco, oferecendo tranquilidade técnica quando você mais precisa de cuidado."
     }
   ];
 
@@ -34,10 +34,10 @@ const ModernDifferentials = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="section-title text-modern-primary font-playfair font-medium mb-4">
-            Por que escolher a Dra. Coni?
+            Por que escolher estar comigo nesta jornada?
           </h2>
           <p className="text-lg text-modern-text-secondary font-inter max-w-2xl mx-auto mt-6">
-            Compromisso com seu bem-estar e com a experiência que você merece viver.
+            Porque você merece viver a maternidade com segurança, respeito e muito carinho.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ const ModernDifferentials = () => {
             onClick={() => scrollToSection('contato')}
             className="btn-primary hover-scale"
           >
-            Agende sua consulta
+            Vamos começar essa jornada juntas
           </button>
         </div>
       </div>
