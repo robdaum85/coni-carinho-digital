@@ -1,42 +1,31 @@
-
 import { Baby, Users, ShieldCheck, Pill, Stethoscope, UserCheck } from "lucide-react";
-
 const ModernServices = () => {
-  const services = [
-    {
-      title: "Pré-natal individualizado",
-      description: "Acompanhamento personalizado durante toda a gestação, adaptado às suas necessidades específicas.",
-      icon: Baby
-    },
-    {
-      title: "Parto humanizado",
-      description: "Respeito às escolhas da mãe, com foco no bem-estar físico e emocional durante o nascimento.",
-      icon: Users
-    },
-    {
-      title: "Obstetrícia de alto risco",
-      description: "Cuidado especializado para gestações que demandam atenção adicional e monitoramento específico.",
-      icon: ShieldCheck
-    },
-    {
-      title: "Inserção de DIU e Implanon",
-      description: "Métodos contraceptivos de longa duração com procedimento minimamente invasivo e acompanhamento.",
-      icon: Pill
-    },
-    {
-      title: "Ginecologia geral",
-      description: "Atendimento integral à saúde da mulher em todas as fases da vida, desde a adolescência até a maturidade, com atenção e cuidado.",
-      icon: Stethoscope
-    },
-    {
-      title: "Atendimento ginecológico a adolescentes",
-      description: "Cuidados especializados para saúde íntima e orientações sobre puberdade, contracepção e bem-estar emocional na adolescência.",
-      icon: UserCheck
-    }
-  ];
-
-  return (
-    <section id="servicos" className="py-20 bg-white">
+  const services = [{
+    title: "Pré-natal individualizado",
+    description: "Acompanhamento personalizado durante toda a gestação, adaptado às suas necessidades específicas.",
+    icon: Baby
+  }, {
+    title: "Parto humanizado",
+    description: "Respeito às escolhas da mãe, com foco no bem-estar físico e emocional durante o nascimento.",
+    icon: Users
+  }, {
+    title: "Obstetrícia de alto risco",
+    description: "Cuidado especializado para gestações que demandam atenção adicional e monitoramento específico.",
+    icon: ShieldCheck
+  }, {
+    title: "Inserção de DIU e Implanon",
+    description: "Métodos contraceptivos de longa duração com procedimento minimamente invasivo e acompanhamento.",
+    icon: Pill
+  }, {
+    title: "Ginecologia geral",
+    description: "Atendimento integral à saúde da mulher em todas as fases da vida, desde a adolescência até a maturidade, com atenção e cuidado.",
+    icon: Stethoscope
+  }, {
+    title: "Atendimento ginecológico a adolescentes",
+    description: "Cuidados especializados para saúde íntima e orientações sobre puberdade, contracepção e bem-estar emocional na adolescência.",
+    icon: UserCheck
+  }];
+  return <section id="servicos" className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16 fade-in">
@@ -48,12 +37,9 @@ const ModernServices = () => {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+          {services.map((service, index) => <div key={index} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group fade-in" style={{
+          animationDelay: `${index * 0.1}s`
+        }}>
               <div className="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-100 transition-colors">
                 <service.icon size={28} className="text-primary" />
               </div>
@@ -63,20 +49,14 @@ const ModernServices = () => {
               <p className="text-gray-600 font-inter leading-relaxed text-left">
                 {service.description}
               </p>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Additional Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center fade-in">
           <div className="order-2 lg:order-1">
             <div className="rounded-2xl overflow-hidden shadow-xl hover:-translate-y-2 transition-transform duration-300">
-              <img
-                src="/lovable-uploads/ce2ba223-9ca2-4c00-a8df-139b4a8cd831.png"
-                alt="Ambiente acolhedor do consultório da Dra. Coni"
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
+              <img alt="Ambiente acolhedor do consultório da Dra. Coni" className="w-full h-auto object-cover" loading="lazy" src="/lovable-uploads/78f9170c-561e-42f8-b304-7075152000b7.png" />
             </div>
           </div>
           <div className="order-1 lg:order-2">
@@ -94,8 +74,6 @@ const ModernServices = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ModernServices;
