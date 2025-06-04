@@ -30,9 +30,7 @@ const ModernServices = () => {
         {/* Section Header */}
         <div className="text-center mb-16 fade-in">
           <h2 className="section-title">Serviços</h2>
-          <p className="text-lg text-gray-600 font-inter max-w-2xl mx-auto mt-6">
-            Acompanhe sua gestação with o cuidado que você merece. Veja como posso te ajudar:
-          </p>
+          <p className="text-lg text-gray-600 font-inter max-w-2xl mx-auto mt-6">Acompanhe sua gestação com o cuidado que você merece. Veja como posso te ajudar:</p>
         </div>
 
         {/* Services Grid */}
