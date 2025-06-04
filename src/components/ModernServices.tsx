@@ -1,5 +1,5 @@
 
-import { Baby, Users, ShieldCheck, Pill, Stethoscope } from "lucide-react";
+import { Baby, Users, ShieldCheck, Pill, Stethoscope, UserCheck } from "lucide-react";
 
 const ModernServices = () => {
   const services = [
@@ -25,8 +25,13 @@ const ModernServices = () => {
     },
     {
       title: "Ginecologia geral",
-      description: "Atendimento integral à saúde da mulher em todas as fases da vida, com atenção e cuidado.",
+      description: "Atendimento integral à saúde da mulher em todas as fases da vida, desde a adolescência até a maturidade, com atenção e cuidado.",
       icon: Stethoscope
+    },
+    {
+      title: "Atendimento ginecológico a adolescentes",
+      description: "Cuidados especializados para saúde íntima e orientações sobre puberdade, contracepção e bem-estar emocional na adolescência.",
+      icon: UserCheck
     }
   ];
 
@@ -55,7 +60,7 @@ const ModernServices = () => {
               <h3 className="text-xl font-playfair font-medium mb-4 text-gray-900">
                 {service.title}
               </h3>
-              <p className="text-gray-600 font-inter leading-relaxed">
+              <p className="text-gray-600 font-inter leading-relaxed text-left">
                 {service.description}
               </p>
             </div>

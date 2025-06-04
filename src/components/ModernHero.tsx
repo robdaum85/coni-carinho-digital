@@ -25,11 +25,11 @@ const ModernHero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center max-w-5xl">
         <div className="fade-in space-y-8">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-medium text-white leading-tight max-w-4xl mx-auto drop-shadow-lg">
-            Parto Humanizado & Obstetrícia de Alto Risco
+            Parto Humanizado, Obstetrícia de Alto Risco e Atenção à Saúde Integral da Mulher
           </h1>
           
           <p className="text-xl md:text-2xl font-inter font-light text-white/95 leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-            Acompanho você com confiança, empatia e acolhimento durante toda sua jornada.
+            Acolhimento completo e cuidado especializado em todas as fases da jornada feminina.
           </p>
           
           {/* Action Buttons */}
