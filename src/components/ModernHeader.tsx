@@ -1,10 +1,14 @@
+
 import { useState } from "react";
 import { Menu, X, Calendar } from "lucide-react";
+
 const ModernHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -14,7 +18,9 @@ const ModernHeader = () => {
     }
     setIsMenuOpen(false);
   };
-  return <header className="fixed top-0 left-0 right-0 z-50 glass-header">
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 glass-header">
       <div className="container mx-auto h-20 flex justify-between items-center max-w-7xl px-[17px] py-0 my-[3px]">
         {/* Logo */}
         <div className="flex items-center">
@@ -39,6 +45,9 @@ const ModernHeader = () => {
           <button onClick={() => scrollToSection('diferenciais')} className="text-gray-600 hover:text-primary transition-colors font-inter font-medium">
             Diferenciais
           </button>
+          <button onClick={() => scrollToSection('faq')} className="text-gray-600 hover:text-primary transition-colors font-inter font-medium">
+            FAQ
+          </button>
           <button onClick={() => scrollToSection('contato')} className="text-gray-600 hover:text-primary transition-colors font-inter font-medium">
             Contato
           </button>
@@ -50,7 +59,8 @@ const ModernHeader = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg shadow-lg">
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg shadow-lg">
           <div className="container mx-auto px-6 py-6 flex flex-col space-y-4">
             <button onClick={() => scrollToSection('sobre')} className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg">
               Sobre
@@ -61,6 +71,9 @@ const ModernHeader = () => {
             <button onClick={() => scrollToSection('diferenciais')} className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg">
               Diferenciais
             </button>
+            <button onClick={() => scrollToSection('faq')} className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg">
+              FAQ
+            </button>
             <button onClick={() => scrollToSection('contato')} className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg">
               Contato
             </button>
@@ -69,7 +82,10 @@ const ModernHeader = () => {
               Agendar Consulta
             </a>
           </div>
-        </div>}
-    </header>;
+        </div>
+      )}
+    </header>
+  );
 };
+
 export default ModernHeader;

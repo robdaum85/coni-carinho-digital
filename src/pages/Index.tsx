@@ -5,6 +5,7 @@ import ModernAbout from "@/components/ModernAbout";
 import ModernServices from "@/components/ModernServices";
 import ModernDifferentials from "@/components/ModernDifferentials";
 import ModernTestimonials from "@/components/ModernTestimonials";
+import ModernFAQ from "@/components/ModernFAQ";
 import ModernContact from "@/components/ModernContact";
 import ModernFooter from "@/components/ModernFooter";
 import ModernSEO from "@/components/ModernSEO";
@@ -24,6 +25,7 @@ const Index = () => {
       <ModernServices />
       <ModernDifferentials />
       <ModernTestimonials />
+      <ModernFAQ />
       <ModernContact />
       <ModernFooter />
     </div>
