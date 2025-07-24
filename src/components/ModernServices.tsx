@@ -17,21 +17,6 @@ const ModernServices = () => {
       title: "Obstetrícia de alto risco",
       description: "Mesmo em gestações complexas, você terá todo o cuidado especializado e o suporte emocional necessário para viver essa experiência com tranquilidade.",
       icon: ShieldCheck
-    },
-    {
-      title: "Métodos contraceptivos",
-      description: "Orientação cuidadosa sobre DIU e Implanon, ajudando você a escolher o método que melhor se adapta ao seu estilo de vida e planos futuros.",
-      icon: Pill
-    },
-    {
-      title: "Ginecologia integral",
-      description: "Cuidado completo da sua saúde íntima em todas as fases da vida, com consultas acolhedoras que respeitam suas individualidades e necessidades.",
-      icon: Stethoscope
-    },
-    {
-      title: "Cuidado para adolescentes",
-      description: "Atendimento especial para jovens, criando um espaço seguro para conversas sobre saúde íntima, puberdade e bem-estar emocional.",
-      icon: UserCheck
     }
   ];
 
@@ -84,12 +69,30 @@ const ModernServices = () => {
               Um cuidado pensado especialmente para você
             </h3>
             <p className="text-lg mb-6 text-gray-600 font-inter leading-relaxed">
-              Cada consulta é um momento dedicado inteiramente a você e ao seu bebê. 
-              Aqui, suas dúvidas são escutadas, seus medos são acolhidos e seus sonhos são respeitados.
+              Cada consulta é um momento dedicado inteiramente a você. Aqui suas dúvidas são escutadas, 
+              seus medos são acolhidos e seus sonhos respeitados.
+            </p>
+            <p className="text-lg mb-6 text-gray-600 font-inter leading-relaxed">
+              Meu atendimento vai além da ginecologia geral. Com a especialização em obstetrícia de alto risco, 
+              ofereço a segurança técnica que você precisa, de uma forma individualizada, envolvida no carinho 
+              que toda gestante merece para chegar a um parto respeitoso e muito mais humanizado.
+            </p>
+            
+            <h4 className="text-2xl font-playfair font-medium mb-4 text-primary">
+              Do pré-natal ao parto
+            </h4>
+            <p className="text-lg mb-4 text-gray-600 font-inter leading-relaxed">
+              Você irá passar por diversas consultas, onde você será ouvida e terá a oportunidade de tirar 
+              todas as suas dúvidas. Você receberá orientações sobre cada fase da gestação.
+            </p>
+            <p className="text-lg mb-4 text-gray-600 font-inter leading-relaxed">
+              Nesse espaço você terá a oportunidade de discutir sobre as vias de parto e entender qual é a 
+              via mais adequada para você.
             </p>
             <p className="text-lg text-gray-600 font-inter leading-relaxed">
-              Com especialização em obstetrícia de alto risco, ofereço a segurança técnica 
-              que você precisa, envolvida no carinho humano que toda gestante merece.
+              Você descobrirá que tanto uma gestação habitual como aquela que apresenta fatores de risco, 
+              não são motivos para um parto cesárea. Que boa parte das gestantes tem condições de ter um 
+              parto normal, seguro e humanizado.
             </p>
           </div>
         </div>

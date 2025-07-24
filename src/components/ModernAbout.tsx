@@ -20,7 +20,7 @@ const ModernAbout = () => {
             <div className="space-y-6 text-gray-700">
               <p className="text-lg leading-relaxed font-inter">
                 Sou médica formada pela UFPR com especialização em Ginecologia e Obstetrícia, 
-                e especialista em Obstetrícia de Alto Risco pela UNIFESP. Atendo em Curitiba e região metropolitana.
+                e especialista em Obstetrícia de Alto Risco pela UNIFESP. Atendo em Curitiba.
               </p>
               
               <p className="text-lg leading-relaxed font-inter">

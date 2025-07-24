@@ -8,8 +8,8 @@ const ModernDifferentials = () => {
       description: "Cada consulta é um espaço seguro onde suas dúvidas, medos e sonhos são acolhidos com carinho e respeito genuíno."
     },
     {
-      title: "Flexibilidade para seu conforto",
-      description: "Atendimento por convênio e particular, pensando na sua comodidade e necessidades financeiras."
+      title: "Em busca de um parto mais seguro",
+      description: "Compreendendo que o parto normal é possível para a maioria das gestantes e também respeitando a sua decisão individualizada, baseada no conhecimento adquirido durante o pré-natal."
     },
     {
       title: "Sempre disponível para você",

@@ -12,23 +12,31 @@ const ModernFAQ = () => {
   const faqs = [
     {
       question: "O que é o parto humanizado?",
-      answer: "É um tipo de parto que respeita as suas escolhas, valoriza o seu protagonismo e busca o mínimo de intervenções médicas desnecessárias, priorizando o seu bem-estar físico e emocional e do seu bebê."
+      answer: "É um tipo de parto que respeita as escolhas da mulher, valoriza o protagonismo da gestante e busca o mínimo de intervenções médicas desnecessárias, priorizando o bem-estar físico e emocional da mãe e do bebê."
     },
     {
       question: "O parto humanizado é sempre normal?",
-      answer: "Não necessariamente. Parto humanizado pode ser vaginal ou cesárea — o importante é que seja baseado em informações, respeito e na decisão compartilhada entre você e a equipe médica."
+      answer: "Não necessariamente. Parto humanizado pode ser vaginal ou cesárea — o importante é que seja baseado em informações, respeito e na decisão compartilhada entre a gestante e a equipe médica."
     },
     {
       question: "Posso ter parto humanizado em hospital?",
-      answer: "Sim! O parto humanizado pode acontecer em hospitais, casas de parto ou até em casa, desde que com uma equipe preparada e respeitando todas as condições de segurança."
+      answer: "Com certeza. Com a equipe certa ao seu lado, além da segurança em situações nem sempre previsíveis na obstetrícia, você estará em um ambiente acolhedor, com respeito, onde a protagonista do seu parto será você."
     },
     {
       question: "Quem pode me acompanhar no parto?",
-      answer: "Você tem o direito de escolher quem estará ao seu lado — seja o(a) parceiro(a), uma doula ou outra pessoa de confiança."
+      answer: "Você tem o direito de escolher quem estará ao seu lado. Você pode levar seu parceiro(a), ou algum familiar ou amigo. Além do seu acompanhante, também pode levar a sua equipe: médico obstetra, enfermeira obstetriz, doula, pediatra. O que será conversado durante o pré-natal para compor a equipe que mais se enquadra em seu perfil."
     },
     {
       question: "Quais os benefícios do parto humanizado?",
-      answer: "Menor risco de intervenções desnecessárias, recuperação mais rápida, vínculo fortalecido com o bebê e maior satisfação com a sua experiência do parto."
+      answer: "Menor risco de intervenções desnecessárias, recuperação mais rápida, vínculo fortalecido com o bebê e maior satisfação com a experiência do parto."
+    },
+    {
+      question: "Minha gestação é de risco. Posso ter parto normal?",
+      answer: "Sim, a maioria das gestantes tem condições em ter um parto normal. Ter fatores de risco não determinam na maioria das vezes a via de parto. Muito pelo contrário, o parto normal em geral reduz os riscos especialmente para a mãe e fornece diversos benefícios para o bebê."
+    },
+    {
+      question: "O que é Plano de parto?",
+      answer: "É um documento que será redigido por você e seu acompanhante, após ter recebido todas as orientações, que permite você colocar seus desejos e anseios de forma individualizada em busca de atendimento mais respeitoso e personalizado."
     }
   ];
 
