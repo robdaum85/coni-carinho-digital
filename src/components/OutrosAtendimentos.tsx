@@ -21,7 +21,7 @@ const OutrosAtendimentos = () => {
     },
     {
       title: "Ginecologia Integral",
-      description: "Cuidado completo da sua saúde íntima em todas as fases da vida, inclusive a menopausa, com consultas acolhedoras que respeitam a sua individualidade e necessidade.",
+      description: "Cuidado completo da sua saúde íntima em todas as fases da vida, incluindo climatério e perimenopausa (geralmente aos 45 anos), com consultas acolhedoras que respeitam a sua individualidade e necessidade.",
       icon: Stethoscope
     }
   ];
