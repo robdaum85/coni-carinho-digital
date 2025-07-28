@@ -12,10 +12,6 @@ const ModernDifferentials = () => {
       description: "Compreendendo que o parto normal é possível para a maioria das gestantes e também respeitando a sua decisão individualizada, baseada no conhecimento adquirido durante o pré-natal."
     },
     {
-      title: "Sempre disponível para você",
-      description: "Suporte via WhatsApp para que você nunca se sinta sozinha, especialmente nos momentos de maior ansiedade."
-    },
-    {
       title: "Segurança em casos complexos",
       description: "Experiência especializada em alto risco, oferecendo tranquilidade técnica quando você mais precisa de cuidado."
     }
