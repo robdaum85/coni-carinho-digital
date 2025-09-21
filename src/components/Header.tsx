@@ -40,7 +40,7 @@ const Header = () => {
             Contato
           </a>
           <a
-            href="https://wa.me/5541999999999"
+            href="https://wa.me/554198943285"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-2 bg-coni-pink text-white rounded-full hover:bg-coni-pink/90 transition-all duration-300 hover:scale-105"
@@ -84,7 +84,7 @@ const Header = () => {
               Contato
             </a>
             <a
-              href="https://wa.me/5541999999999"
+              href="https://wa.me/554198943285"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 py-3 px-4 bg-coni-pink text-white rounded-full hover:bg-coni-pink/90 transition-colors font-inter"

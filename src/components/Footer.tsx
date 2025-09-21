@@ -17,7 +17,7 @@ const Footer = () => {
             <h3 className="text-xl font-inter font-semibold mb-4">Contato</h3>
             <div className="space-y-3">
               <a
-                href="https://wa.me/5541999999999"
+                href="https://wa.me/554198943285"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:opacity-80 transition-opacity"
@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                   <Phone size={18} className="text-coni-pink" />
                 </div>
-                <span className="font-inter">(41) 99999-9999</span>
+                <span className="font-inter">(41) 98943-285</span>
               </a>
               <a
                 href="mailto:contato@draconiwaldow.com.br"
@@ -52,7 +52,7 @@ const Footer = () => {
                 <Instagram size={20} className="text-coni-pink" />
               </a>
               <a
-                href="https://wa.me/5541999999999"
+                href="https://wa.me/554198943285"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
