@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Olá, gostaria de agendar uma consulta com a Dra. Coni Waldow");
+    const message = encodeURIComponent("(*SITE*) - Olá, gostaria de agendar uma consulta com a Dra. Coni Waldow");
     const whatsappLink = `https://wa.me/554198943285?text=${message}`;
     window.open(whatsappLink, "_blank", "noopener,noreferrer");
   };

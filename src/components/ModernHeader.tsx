@@ -51,7 +51,7 @@ const ModernHeader = () => {
           <button onClick={() => scrollToSection('contato')} className="text-gray-600 hover:text-primary transition-colors font-inter font-medium">
             Contato
           </button>
-          <a href={`https://wa.me/554198943285?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Dra. Coni Waldow')}`} target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center gap-2">
+          <a href={`https://wa.me/554198943285?text=${encodeURIComponent('(*SITE*) - Olá, gostaria de agendar uma consulta com a Dra. Coni Waldow')}`} target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center gap-2">
             <Calendar size={16} />
             Agendar Consulta
           </a>
@@ -77,7 +77,7 @@ const ModernHeader = () => {
             <button onClick={() => scrollToSection('contato')} className="text-left py-3 text-gray-600 hover:text-primary transition-colors font-inter text-lg">
               Contato
             </button>
-            <a href={`https://wa.me/554198943285?text=${encodeURIComponent('Olá, gostaria de agendar uma consulta com a Dra. Coni Waldow')}`} target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center justify-center gap-2 mt-4">
+            <a href={`https://wa.me/554198943285?text=${encodeURIComponent('(*SITE*) - Olá, gostaria de agendar uma consulta com a Dra. Coni Waldow')}`} target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center justify-center gap-2 mt-4">
               <Calendar size={16} />
               Agendar Consulta
             </a>
