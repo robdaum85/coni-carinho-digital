@@ -36,7 +36,8 @@ const ContactForm = () => {
       message: "",
     });
     
-    const whatsappUrl = `https://wa.me/554198943285?text=Olá, meu nome é ${formData.name}. ${formData.message}`;
+    const message = encodeURIComponent(`Olá, meu nome é ${formData.name}. ${formData.message}`);
+    const whatsappUrl = `https://wa.me/554198943285?text=${message}`;
     window.open(whatsappUrl, "_blank");
   };
 

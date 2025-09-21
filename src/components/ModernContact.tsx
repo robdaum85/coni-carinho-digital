@@ -47,7 +47,8 @@ const ModernContact = () => {
     });
   };
   const handleWhatsApp = () => {
-    const whatsappUrl = `https://wa.me/554198943285?text=Olá, meu nome é ${formData.name || 'interessado'}. Gostaria de agendar uma consulta.`;
+    const message = encodeURIComponent(`Olá, meu nome é ${formData.name || 'interessado'}. Gostaria de agendar uma consulta.`);
+    const whatsappUrl = `https://wa.me/554198943285?text=${message}`;
     window.open(whatsappUrl, "_blank");
   };
   return <section id="contato" className="py-20 bg-gray-50">
