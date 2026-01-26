@@ -37,7 +37,7 @@ const ModernHero = () => {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <a 
-              href={`https://wa.me/554198943285?text=${encodeURIComponent('(*SITE*) - Olá, gostaria de agendar uma consulta com a Dra. Coni Waldow')}`}
+              href={`https://wa.me/5541998943285?text=${encodeURIComponent('(*SITE*) - Olá, gostaria de agendar uma consulta com a Dra. Coni Waldow')}`}
               target="_blank" 
               rel="noopener noreferrer" 
               className="btn-primary text-lg px-8 py-4 w-full sm:w-auto"

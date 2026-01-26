@@ -10,6 +10,7 @@ import ModernFAQ from "@/components/ModernFAQ";
 import ModernContact from "@/components/ModernContact";
 import ModernFooter from "@/components/ModernFooter";
 import ModernSEO from "@/components/ModernSEO";
+import StructuredData from "@/components/StructuredData";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -17,6 +18,7 @@ const Index = () => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#FAFAF8' }}>
       <ModernSEO />
+      <StructuredData />
       <ModernHeader />
       <WhatsAppButton />
       <ScrollToTop />

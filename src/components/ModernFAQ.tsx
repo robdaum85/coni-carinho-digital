@@ -63,7 +63,7 @@ const ModernFAQ = () => {
           <p className="text-gray-600 font-inter mb-6">
             Ainda tem dúvidas? Estou aqui para esclarecer tudo com você.
           </p>
-          <a href={`https://wa.me/554198943285?text=${encodeURIComponent('(*SITE*) - Olá, gostaria de esclarecer algumas dúvidas sobre parto humanizado')}`} target="_blank" rel="noopener noreferrer" className="btn-primary">Agende sua consulta.</a>
+          <a href={`https://wa.me/5541998943285?text=${encodeURIComponent('(*SITE*) - Olá, gostaria de esclarecer algumas dúvidas sobre parto humanizado')}`} target="_blank" rel="noopener noreferrer" className="btn-primary">Agende sua consulta.</a>
         </div>
       </div>
     </section>;

@@ -37,7 +37,7 @@ const ContactForm = () => {
     });
     
     const message = encodeURIComponent(`(*SITE*) - Olá, meu nome é ${formData.name}. ${formData.message}`);
-    const whatsappUrl = `https://wa.me/554198943285?text=${message}`;
+    const whatsappUrl = `https://wa.me/5541998943285?text=${message}`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -70,7 +70,7 @@ const ContactForm = () => {
           <Input
             type="tel"
             name="whatsapp"
-            placeholder="WhatsApp (41) 98943-285"
+            placeholder="WhatsApp (41) 99894-3285"
             value={formData.whatsapp}
             onChange={handleChange}
             required
