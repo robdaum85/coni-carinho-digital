@@ -48,7 +48,7 @@ const ModernContact = () => {
   };
   const handleWhatsApp = () => {
     const message = encodeURIComponent(`(*SITE*) - Olá, meu nome é ${formData.name || 'interessado'}. Gostaria de agendar uma consulta.`);
-    const whatsappUrl = `https://wa.me/554198943285?text=${message}`;
+    const whatsappUrl = `https://wa.me/5541998943285?text=${message}`;
     window.open(whatsappUrl, "_blank");
   };
   return <section id="contato" className="py-20 bg-gray-50">
@@ -83,7 +83,7 @@ const ModernContact = () => {
                 <div>
                   <h4 className="font-playfair font-medium text-gray-900">WhatsApp</h4>
                   <button onClick={handleWhatsApp} className="text-primary hover:text-primary/80 transition-colors">
-                    (41) 98943-285
+                    (41) 99894-3285
                   </button>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const ModernContact = () => {
                 <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700 mb-2">
                   WhatsApp
                 </label>
-                <input type="tel" id="whatsapp" name="whatsapp" value={formData.whatsapp} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors" placeholder="(41) 98943-285" />
+                <input type="tel" id="whatsapp" name="whatsapp" value={formData.whatsapp} onChange={handleChange} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors" placeholder="(41) 99894-3285" />
               </div>
 
               <div>

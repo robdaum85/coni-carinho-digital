@@ -13,11 +13,11 @@ const ModernFooter = () => {
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-inter font-semibold mb-4">Contato</h3>
             <div className="space-y-3">
-              <a href="https://wa.me/554198943285" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-80 transition-opacity group">
+              <a href="https://wa.me/5541998943285" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:opacity-80 transition-opacity group">
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Phone size={18} className="text-primary" />
                 </div>
-                <span className="font-inter">(41) 98943-285</span>
+                <span className="font-inter">(41) 99894-3285</span>
               </a>
               <a href="mailto:contato@draconiwaldow.com.br" className="flex items-center gap-3 hover:opacity-80 transition-opacity group">
                 
@@ -33,7 +33,7 @@ const ModernFooter = () => {
               <a href="https://instagram.com/draconiwaldow" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                 <Instagram size={20} className="text-primary" />
               </a>
-              <a href="https://wa.me/554198943285" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <a href="https://wa.me/5541998943285" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform">
                 <Phone size={20} className="text-primary" />
               </a>
               
