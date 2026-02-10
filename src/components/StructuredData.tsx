@@ -9,7 +9,7 @@ const StructuredData = () => {
     "url": "https://www.draconiwaldow.com.br",
     "telephone": "+55-41-99894-3285",
     "email": "contato@draconiwaldow.com.br",
-    "description": "Consultório especializado em obstetrícia humanizada, parto humanizado, pré-natal de alto risco e ginecologia em Curitiba-PR. Atendimento personalizado com a Dra. Coni Waldow.",
+    "description": "Consultório especializado em obstetrícia humanizada, parto humanizado, parto assistido, parto naturalizado e pré-natal de alto risco em Curitiba-PR. Obstetra humanizado com foco na humanização do parto, incluindo parto aquático, parto de cócoras e acompanhamento com doula. Atendimento personalizado com a Dra. Coni Waldow.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Curitiba",
