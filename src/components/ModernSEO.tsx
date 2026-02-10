@@ -18,7 +18,7 @@ const ModernSEO = () => {
       <meta property="og:title" content="Dra. Coni Waldow – Obstetrícia Humanizada em Curitiba" />
       <meta
         property="og:description"
-        content="Especialista em parto humanizado e obstetrícia de alto risco. Acompanhamento pré-natal personalizado e acolhedor em Curitiba."
+        content="Obstetra humanizado especialista em parto humanizado, parto assistido, parto aquático e humanização do parto. Pré-natal personalizado em Curitiba."
       />
       <meta property="og:url" content="https://www.draconiwaldow.com.br" />
       <meta property="og:image" content="https://www.draconiwaldow.com.br/lovable-uploads/2516b20b-786c-48c8-a7c3-6e5a8a0d9363.png" />
