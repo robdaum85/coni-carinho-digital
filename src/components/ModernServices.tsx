@@ -21,7 +21,7 @@ const ModernServices = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-white">
+    <section id="servicos" className="py-20 bg-white" itemScope itemType="https://schema.org/MedicalBusiness">
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16 fade-in">
@@ -38,14 +38,17 @@ const ModernServices = () => {
               key={index} 
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 group fade-in" 
               style={{animationDelay: `${index * 0.1}s`}}
+              itemScope
+              itemType="https://schema.org/MedicalProcedure"
+              itemProp="availableService"
             >
               <div className="w-16 h-16 bg-pink-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-100 transition-colors">
                 <service.icon size={28} className="text-primary" />
               </div>
-              <h3 className="text-xl font-playfair font-medium mb-4 text-gray-900">
+              <h3 className="text-xl font-playfair font-medium mb-4 text-gray-900" itemProp="name">
                 {service.title}
               </h3>
-              <p className="text-gray-600 font-inter leading-relaxed text-left">
+              <p className="text-gray-600 font-inter leading-relaxed text-left" itemProp="description">
                 {service.description}
               </p>
             </div>

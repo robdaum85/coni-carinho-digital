@@ -8,19 +8,19 @@ const ModernAbout = () => {
   };
 
   return (
-    <section id="sobre" className="py-20 bg-gray-50">
+    <section id="sobre" className="py-20 bg-gray-50" itemScope itemType="https://schema.org/Physician">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className="fade-in space-y-8">
-            <h2 className="section-title text-left">
+            <h2 className="section-title text-left" itemProp="name">
               Sobre a Dra. Coni Waldow
             </h2>
             
             <div className="space-y-6 text-gray-700">
-              <p className="text-lg leading-relaxed font-inter">
-                Sou médica formada pela UFPR com especialização em Ginecologia e Obstetrícia, 
-                e especialista em Obstetrícia de Alto Risco pela UNIFESP. Atendo em Curitiba.
+              <p className="text-lg leading-relaxed font-inter" itemProp="description">
+                Sou médica formada pela <span itemProp="alumniOf">UFPR</span> com especialização em Ginecologia e Obstetrícia, 
+                e especialista em Obstetrícia de Alto Risco pela <span itemProp="alumniOf">UNIFESP</span>. Atendo em <span itemProp="areaServed">Curitiba</span>.
               </p>
               
               <p className="text-lg leading-relaxed font-inter">
@@ -54,7 +54,8 @@ const ModernAbout = () => {
             <div className="rounded-2xl overflow-hidden shadow-2xl w-full max-w-md lg:max-w-lg transition-transform duration-300 hover:-translate-y-2">
               <img
                 src="/lovable-uploads/46c8404b-585c-4e04-808d-408e99eeaddc.png"
-                alt="Dra. Coni Waldow em atendimento profissional"
+                alt="Dra. Coni Waldow, médica obstetra especialista em parto humanizado em Curitiba"
+                itemProp="image"
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />

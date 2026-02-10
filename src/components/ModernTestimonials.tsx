@@ -101,14 +101,14 @@ const ModernTestimonials = () => {
           <div className="mx-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {getVisibleTestimonials().map((testimonial, index) => (
-                <div key={index} className="testimonial-card animate-fade-in-up">
-                  <p className="text-modern-text-secondary font-inter italic mb-6 pt-8 leading-relaxed">
+                <div key={index} className="testimonial-card animate-fade-in-up" itemScope itemType="https://schema.org/Review" itemProp="review">
+                  <p className="text-modern-text-secondary font-inter italic mb-6 pt-8 leading-relaxed" itemProp="reviewBody">
                     "{testimonial.text}"
                   </p>
-                  <div className="flex items-center">
+                  <div className="flex items-center" itemProp="author" itemScope itemType="https://schema.org/Person">
                     <div className="w-1 h-10 bg-modern-primary/30 mr-3 rounded-full"></div>
                     <div>
-                      <p className="font-inter font-semibold text-modern-text-primary">
+                      <p className="font-inter font-semibold text-modern-text-primary" itemProp="name">
                         {testimonial.name}
                       </p>
                       <p className="text-sm text-modern-text-muted font-inter">
