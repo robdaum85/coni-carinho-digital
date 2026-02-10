@@ -64,6 +64,26 @@ const StructuredData = () => {
         "@type": "MedicalProcedure",
         "name": "Atendimento a Adolescentes",
         "description": "Cuidado ginecológico especializado e acolhedor para adolescentes."
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Assistido",
+        "description": "Acompanhamento médico personalizado durante todo o trabalho de parto, garantindo segurança e respeito às escolhas da gestante com assistência obstétrica humanizada."
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Aquático",
+        "description": "Modalidade de parto na água que promove relaxamento, alívio natural da dor e maior conforto para a gestante durante o trabalho de parto."
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto de Cócoras",
+        "description": "Parto em posição vertical que utiliza a gravidade a favor, facilitando a descida do bebê e proporcionando maior autonomia à gestante."
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Acompanhamento com Doula",
+        "description": "Integração com doula para suporte emocional, físico e informacional durante a gestação, trabalho de parto e pós-parto."
       }
     ],
     "aggregateRating": {
