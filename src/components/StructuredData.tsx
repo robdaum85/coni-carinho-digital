@@ -350,6 +350,26 @@ const StructuredData = () => {
       {
         "@type": "MedicalCondition",
         "name": "Gravidez de Alto Risco"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Humanizado"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Assistido"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Aquático"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto de Cócoras"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Humanização do Parto"
       }
     ]
   };
