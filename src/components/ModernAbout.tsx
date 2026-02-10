@@ -18,9 +18,9 @@ const ModernAbout = () => {
             </h2>
             
             <div className="space-y-6 text-gray-700">
-              <p className="text-lg leading-relaxed font-inter">
-                Sou médica formada pela UFPR com especialização em Ginecologia e Obstetrícia, 
-                e especialista em Obstetrícia de Alto Risco pela UNIFESP. Atendo em Curitiba.
+              <p className="text-lg leading-relaxed font-inter" itemProp="description">
+                Sou médica formada pela <span itemProp="alumniOf">UFPR</span> com especialização em Ginecologia e Obstetrícia, 
+                e especialista em Obstetrícia de Alto Risco pela <span itemProp="alumniOf">UNIFESP</span>. Atendo em <span itemProp="areaServed">Curitiba</span>.
               </p>
               
               <p className="text-lg leading-relaxed font-inter">
