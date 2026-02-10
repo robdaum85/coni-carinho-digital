@@ -5,7 +5,7 @@ const ModernServices = () => {
   const services = [
     {
       title: "Pré-natal personalizado",
-      description: "Acompanhamento feito especialmente para você, respeitando suas necessidades e criando um vínculo de confiança que durará toda a gestação.",
+      description: "Acompanhamento feito especialmente para você, com avaliação de riscos no parto, respeitando suas necessidades e criando um vínculo de confiança que durará toda a gestação.",
       icon: Baby
     },
     {
