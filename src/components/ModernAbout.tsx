@@ -13,7 +13,7 @@ const ModernAbout = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className="fade-in space-y-8">
-            <h2 className="section-title text-left">
+            <h2 className="section-title text-left" itemProp="name">
               Sobre a Dra. Coni Waldow
             </h2>
             
