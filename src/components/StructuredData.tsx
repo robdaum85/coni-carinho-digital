@@ -315,7 +315,7 @@ const StructuredData = () => {
     "@type": "WebSite",
     "name": "Dra. Coni Waldow - Obstetrícia Humanizada em Curitiba",
     "url": "https://www.draconiwaldow.com.br",
-    "description": "Site oficial da Dra. Coni Waldow, médica obstetra especialista em parto humanizado e gestação de alto risco em Curitiba-PR.",
+    "description": "Site oficial da Dra. Coni Waldow, obstetra humanizado especialista em parto humanizado, parto assistido, parto naturalizado, parto aquático, parto de cócoras, humanização do parto e gestação de alto risco em Curitiba-PR.",
     "inLanguage": "pt-BR",
     "publisher": {
       "@type": "Physician",
