@@ -9,7 +9,7 @@ const StructuredData = () => {
     "url": "https://www.draconiwaldow.com.br",
     "telephone": "+55-41-99894-3285",
     "email": "contato@draconiwaldow.com.br",
-    "description": "Consultório especializado em obstetrícia humanizada, parto humanizado, pré-natal de alto risco e ginecologia em Curitiba-PR. Atendimento personalizado com a Dra. Coni Waldow.",
+    "description": "Consultório especializado em obstetrícia humanizada, parto humanizado, parto assistido, parto naturalizado e pré-natal de alto risco em Curitiba-PR. Obstetra humanizado com foco na humanização do parto, incluindo parto aquático, parto de cócoras e acompanhamento com doula. Atendimento personalizado com a Dra. Coni Waldow.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Curitiba",
@@ -22,29 +22,11 @@ const StructuredData = () => {
       "latitude": -25.4284,
       "longitude": -49.2733
     },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Curitiba",
-        "sameAs": "https://pt.wikipedia.org/wiki/Curitiba"
-      },
-      {
-        "@type": "City",
-        "name": "São José dos Pinhais"
-      },
-      {
-        "@type": "City",
-        "name": "Araucária"
-      },
-      {
-        "@type": "City",
-        "name": "Ponta Grossa"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Região Metropolitana de Curitiba"
-      }
-    ],
+    "areaServed": {
+      "@type": "City",
+      "name": "Curitiba",
+      "sameAs": "https://pt.wikipedia.org/wiki/Curitiba"
+    },
     "priceRange": "$$",
     "currenciesAccepted": "BRL",
     "paymentAccepted": "Dinheiro, Cartão de Crédito, Cartão de Débito, PIX",
@@ -82,6 +64,26 @@ const StructuredData = () => {
         "@type": "MedicalProcedure",
         "name": "Atendimento a Adolescentes",
         "description": "Cuidado ginecológico especializado e acolhedor para adolescentes."
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Assistido",
+        "description": "Acompanhamento médico personalizado durante todo o trabalho de parto, garantindo segurança e respeito às escolhas da gestante com assistência obstétrica humanizada."
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Aquático",
+        "description": "Modalidade de parto na água que promove relaxamento, alívio natural da dor e maior conforto para a gestante durante o trabalho de parto."
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto de Cócoras",
+        "description": "Parto em posição vertical que utiliza a gravidade a favor, facilitando a descida do bebê e proporcionando maior autonomia à gestante."
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Acompanhamento com Doula",
+        "description": "Integração com doula para suporte emocional, físico e informacional durante a gestação, trabalho de parto e pós-parto."
       }
     ],
     "aggregateRating": {
@@ -228,7 +230,16 @@ const StructuredData = () => {
       "Obstetrícia de Alto Risco",
       "Pré-natal Personalizado",
       "Ginecologia",
-      "Métodos Contraceptivos"
+      "Métodos Contraceptivos",
+      "Humanização do Parto",
+      "Parto Assistido",
+      "Parto Naturalizado",
+      "Parto Aquático",
+      "Parto de Cócoras",
+      "Acompanhamento com Doula",
+      "Riscos no Parto",
+      "Obstetra Humanizado",
+      "Parto Humanitário"
     ],
     "worksFor": {
       "@type": "MedicalBusiness",
@@ -295,6 +306,38 @@ const StructuredData = () => {
           "@type": "Answer",
           "text": "É um documento que será redigido por você e seu acompanhante, após ter recebido todas as orientações, que permite você colocar seus desejos e anseios de forma individualizada em busca de atendimento mais respeitoso e personalizado."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual o preço do parto humanizado em Curitiba?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O valor do parto humanizado varia conforme cada caso e é discutido de forma transparente durante a consulta. O atendimento da Dra. Coni Waldow é particular, garantindo acompanhamento personalizado e dedicado do pré-natal ao pós-parto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que é parto aquático e quais os benefícios?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O parto aquático é realizado em uma banheira com água morna, proporcionando relaxamento muscular, alívio natural da dor e maior conforto durante o trabalho de parto. A água aquecida ajuda a reduzir a tensão e facilita a movimentação da gestante."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso ter parto de cócoras ou em outras posições?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! Posições verticais como cócoras, de joelhos ou semi-sentada utilizam a gravidade a favor, facilitando a descida do bebê e proporcionando maior autonomia. A Dra. Coni respeita a liberdade de posição durante o trabalho de parto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual o papel da doula no parto humanizado?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A doula oferece suporte emocional, físico e informacional contínuo durante a gestação, trabalho de parto e pós-parto. Ela complementa o trabalho da equipe médica, proporcionando conforto, técnicas de alívio da dor e apoio emocional à gestante e sua família."
+        }
       }
     ]
   };
@@ -304,7 +347,7 @@ const StructuredData = () => {
     "@type": "WebSite",
     "name": "Dra. Coni Waldow - Obstetrícia Humanizada em Curitiba",
     "url": "https://www.draconiwaldow.com.br",
-    "description": "Site oficial da Dra. Coni Waldow, médica obstetra especialista em parto humanizado e gestação de alto risco em Curitiba-PR.",
+    "description": "Site oficial da Dra. Coni Waldow, obstetra humanizado especialista em parto humanizado, parto assistido, parto naturalizado, parto aquático, parto de cócoras, humanização do parto e gestação de alto risco em Curitiba-PR.",
     "inLanguage": "pt-BR",
     "publisher": {
       "@type": "Physician",
@@ -317,7 +360,7 @@ const StructuredData = () => {
     "@type": "MedicalWebPage",
     "name": "Dra. Coni Waldow - Obstetrícia Humanizada e Parto Humanizado em Curitiba",
     "url": "https://www.draconiwaldow.com.br",
-    "description": "Informações sobre parto humanizado, pré-natal de alto risco e ginecologia com a Dra. Coni Waldow em Curitiba-PR.",
+    "description": "Informações sobre parto humanizado, parto assistido, parto aquático, parto de cócoras, humanização do parto, pré-natal de alto risco e ginecologia com a Dra. Coni Waldow em Curitiba-PR.",
     "lastReviewed": "2026-02-10",
     "medicalAudience": {
       "@type": "MedicalAudience",
@@ -339,6 +382,26 @@ const StructuredData = () => {
       {
         "@type": "MedicalCondition",
         "name": "Gravidez de Alto Risco"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Humanizado"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Assistido"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto Aquático"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Parto de Cócoras"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Humanização do Parto"
       }
     ]
   };

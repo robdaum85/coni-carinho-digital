@@ -5,12 +5,12 @@ const ModernServices = () => {
   const services = [
     {
       title: "Pré-natal personalizado",
-      description: "Acompanhamento feito especialmente para você, respeitando suas necessidades e criando um vínculo de confiança que durará toda a gestação.",
+      description: "Acompanhamento feito especialmente para você, com avaliação de riscos no parto, respeitando suas necessidades e criando um vínculo de confiança que durará toda a gestação.",
       icon: Baby
     },
     {
       title: "Parto humanizado",
-      description: "Seu parto, suas escolhas. Estarei ao seu lado garantindo que este momento seja vivido com respeito, segurança e da forma que você sonhou.",
+      description: "Seu parto, suas escolhas. Com foco na humanização do parto, ofereço parto assistido, parto naturalizado e acompanhamento com doula, garantindo respeito, segurança e acolhimento.",
       icon: Users
     },
     {
