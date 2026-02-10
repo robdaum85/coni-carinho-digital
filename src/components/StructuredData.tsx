@@ -22,29 +22,11 @@ const StructuredData = () => {
       "latitude": -25.4284,
       "longitude": -49.2733
     },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Curitiba",
-        "sameAs": "https://pt.wikipedia.org/wiki/Curitiba"
-      },
-      {
-        "@type": "City",
-        "name": "São José dos Pinhais"
-      },
-      {
-        "@type": "City",
-        "name": "Araucária"
-      },
-      {
-        "@type": "City",
-        "name": "Ponta Grossa"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Região Metropolitana de Curitiba"
-      }
-    ],
+    "areaServed": {
+      "@type": "City",
+      "name": "Curitiba",
+      "sameAs": "https://pt.wikipedia.org/wiki/Curitiba"
+    },
     "priceRange": "$$",
     "currenciesAccepted": "BRL",
     "paymentAccepted": "Dinheiro, Cartão de Crédito, Cartão de Débito, PIX",
