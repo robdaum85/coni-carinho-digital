@@ -26,6 +26,18 @@ const ModernFAQ = () => {
   }, {
     question: "O que é Plano de parto?",
     answer: "É um documento que será redigido por você e seu acompanhante, após ter recebido todas as orientações, que permite você colocar seus desejos e anseios de forma individualizada em busca de atendimento mais respeitoso e personalizado."
+  }, {
+    question: "Qual o preço do parto humanizado em Curitiba?",
+    answer: "O valor do parto humanizado varia conforme cada caso e é discutido de forma transparente durante a consulta. O atendimento da Dra. Coni Waldow é particular, garantindo acompanhamento personalizado e dedicado do pré-natal ao pós-parto."
+  }, {
+    question: "O que é parto aquático e quais os benefícios?",
+    answer: "O parto aquático é realizado em uma banheira com água morna, proporcionando relaxamento muscular, alívio natural da dor e maior conforto durante o trabalho de parto. A água aquecida ajuda a reduzir a tensão e facilita a movimentação da gestante."
+  }, {
+    question: "Posso ter parto de cócoras ou em outras posições?",
+    answer: "Sim! Posições verticais como cócoras, de joelhos ou semi-sentada utilizam a gravidade a favor, facilitando a descida do bebê e proporcionando maior autonomia. A Dra. Coni respeita a liberdade de posição durante o trabalho de parto."
+  }, {
+    question: "Qual o papel da doula no parto humanizado?",
+    answer: "A doula oferece suporte emocional, físico e informacional contínuo durante a gestação, trabalho de parto e pós-parto. Ela complementa o trabalho da equipe médica, proporcionando conforto, técnicas de alívio da dor e apoio emocional à gestante e sua família."
   }];
   return <section id="faq" className="py-20 bg-white">
       <div className="container mx-auto px-6 max-w-4xl">
