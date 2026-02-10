@@ -230,7 +230,16 @@ const StructuredData = () => {
       "Obstetrícia de Alto Risco",
       "Pré-natal Personalizado",
       "Ginecologia",
-      "Métodos Contraceptivos"
+      "Métodos Contraceptivos",
+      "Humanização do Parto",
+      "Parto Assistido",
+      "Parto Naturalizado",
+      "Parto Aquático",
+      "Parto de Cócoras",
+      "Acompanhamento com Doula",
+      "Riscos no Parto",
+      "Obstetra Humanizado",
+      "Parto Humanitário"
     ],
     "worksFor": {
       "@type": "MedicalBusiness",
