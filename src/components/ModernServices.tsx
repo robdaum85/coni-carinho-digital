@@ -21,7 +21,7 @@ const ModernServices = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-white">
+    <section id="servicos" className="py-20 bg-white" itemScope itemType="https://schema.org/MedicalBusiness">
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16 fade-in">
