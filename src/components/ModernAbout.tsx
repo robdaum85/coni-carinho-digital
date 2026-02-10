@@ -54,7 +54,8 @@ const ModernAbout = () => {
             <div className="rounded-2xl overflow-hidden shadow-2xl w-full max-w-md lg:max-w-lg transition-transform duration-300 hover:-translate-y-2">
               <img
                 src="/lovable-uploads/46c8404b-585c-4e04-808d-408e99eeaddc.png"
-                alt="Dra. Coni Waldow em atendimento profissional"
+                alt="Dra. Coni Waldow, médica obstetra especialista em parto humanizado em Curitiba"
+                itemProp="image"
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />

@@ -17,7 +17,7 @@ const ModernHero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="/lovable-uploads/2516b20b-786c-48c8-a7c3-6e5a8a0d9363.png" 
-          alt="Dra. Coni Waldow em atendimento profissional" 
+          alt="Dra. Coni Waldow, obstetra humanizada em Curitiba - Parto humanizado e pré-natal de alto risco" 
           className="w-full h-full object-cover object-center" 
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60"></div>
