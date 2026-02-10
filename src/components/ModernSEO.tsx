@@ -6,11 +6,11 @@ const ModernSEO = () => {
       <title>Dra. Coni Waldow – Obstetrícia Humanizada em Curitiba | Parto Humanizado e Alto Risco</title>
       <meta
         name="description"
-        content="A Dra. Coni Waldow é especialista em parto humanizado e obstetrícia de alto risco em Curitiba. Agende seu pré-natal personalizado, com acompanhamento acolhedor e seguro. UFPR e UNIFESP."
+        content="A Dra. Coni Waldow é obstetra humanizado especialista em parto humanizado, parto assistido, parto aquático e humanização do parto em Curitiba. Pré-natal personalizado com acompanhamento acolhedor. UFPR e UNIFESP."
       />
       <meta
         name="keywords"
-        content="parto humanizado Curitiba, obstetrícia alto risco, pré-natal humanizado, ginecologia Curitiba, Dra Coni Waldow, obstetra Curitiba, parto normal, cesárea humanizada, gestação alto risco, UFPR, UNIFESP, plano de parto"
+        content="parto humanizado Curitiba, obstetrícia alto risco, pré-natal humanizado, ginecologia Curitiba, Dra Coni Waldow, obstetra Curitiba, parto normal, cesárea humanizada, gestação alto risco, UFPR, UNIFESP, plano de parto, humanização do parto, humanização no parto, parto aquático, parto assistido, parto naturalizado, parto de cócoras, parto doula, obstetra humanizado, riscos no parto, preço parto humanizado, parto humanitário, definição de parto humanizado"
       />
       
       {/* Open Graph */}
