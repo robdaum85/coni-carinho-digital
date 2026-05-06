@@ -91,8 +91,8 @@ const StructuredData = () => {
       "ratingValue": "5",
       "bestRating": "5",
       "worstRating": "1",
-      "ratingCount": "5",
-      "reviewCount": "5"
+      "ratingCount": "8",
+      "reviewCount": "8"
     },
     "review": [
       {
@@ -104,9 +104,9 @@ const StructuredData = () => {
         },
         "author": {
           "@type": "Person",
-          "name": "Mariana C."
+          "name": "Bruna Mendes Paiva"
         },
-        "reviewBody": "A Dra. Coni foi uma luz no momento mais importante da minha vida. Cuidou de mim e do meu bebê com tanto amor que nunca vou esquecer. Me senti segura e acolhida em cada consulta."
+        "reviewBody": "Não existem palavras suficientes para agradecer tudo o que a Dra. Coni representou na minha jornada até o nascimento do Thomas. A calma, a presença e a confiança que ela transmite foram essenciais para que eu conseguisse viver o parto normal com que sempre sonhei. A Dra. Coni é uma profissional excepcional, mas acima de tudo, é uma pessoa humana, sensível e acolhedora."
       },
       {
         "@type": "Review",
@@ -117,9 +117,9 @@ const StructuredData = () => {
         },
         "author": {
           "@type": "Person",
-          "name": "Juliane P."
+          "name": "Izadora Silveira"
         },
-        "reviewBody": "Descobrir minha trombofilia foi assustador, mas a Dra. Coni me tranquilizou desde o primeiro momento. Graças ao cuidado dela, vivi um parto humanizado e seguro."
+        "reviewBody": "Dra. Coni é uma médica excepcional! Muito cuidadosa, gentil e atenciosa. Nossos filhos não poderiam ter nascido com melhor médica!"
       },
       {
         "@type": "Review",
@@ -130,9 +130,9 @@ const StructuredData = () => {
         },
         "author": {
           "@type": "Person",
-          "name": "Larissa M."
+          "name": "Gabriel Couto"
         },
-        "reviewBody": "Foi como ter uma amiga médica me acompanhando. Ela respeitou todas as minhas escolhas e me deu força quando eu mais precisava. Recomendo de coração!"
+        "reviewBody": "Excelente profissional. Sempre muito solícita, paciente, muito correta."
       },
       {
         "@type": "Review",
@@ -143,9 +143,9 @@ const StructuredData = () => {
         },
         "author": {
           "@type": "Person",
-          "name": "Ana Paula S."
+          "name": "Mariana Couto"
         },
-        "reviewBody": "Minha gestação de alto risco não foi fácil, mas ter a Dra. Coni ao meu lado fez toda a diferença. Ela me deu confiança e cuidado em cada momento."
+        "reviewBody": "Médica excelente! Humana! Tornou nossa experiência de parto normal possível e incrível!"
       },
       {
         "@type": "Review",
@@ -156,9 +156,27 @@ const StructuredData = () => {
         },
         "author": {
           "@type": "Person",
-          "name": "Carolina R."
+          "name": "Rachel Lobato"
         },
-        "reviewBody": "Profissional excepcional e ser humano incrível! Me acompanhou com tanto carinho que transformou minha experiência de maternidade. Gratidão eterna!"
+        "reviewBody": "Meu parto foi excelente, tranquila e humanizada!"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Sibele Alberti" },
+        "reviewBody": "Profissional extremamente atenciosa, empática e competente. Durante todo o acompanhamento, senti-me acolhida e bem cuidada."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Jassilane Granemann" },
+        "reviewBody": "Profissional com atendimento humanizado, equilibrado e técnico."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Psicóloga Renata Dallegrave" },
+        "reviewBody": "Não é só uma médica, é alguém com um olhar atento às necessidades e emoções."
       }
     ],
     "sameAs": [
