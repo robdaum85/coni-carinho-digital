@@ -269,13 +269,24 @@ const ModernTestimonials = () => {
 
         {/* CTA */}
         <div className="text-center animate-fade-in">
-          <button
-            onClick={handleWhatsApp}
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-inter font-semibold text-white bg-gradient-to-r from-coni-pink to-[#d44970] shadow-lg shadow-coni-pink/30 hover:shadow-xl hover:shadow-coni-pink/40 hover:scale-105 transition-all duration-300"
-          >
-            <MessageCircle size={20} />
-            Agendar consulta
-          </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+            <button
+              onClick={handleWhatsApp}
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-inter font-semibold text-white bg-gradient-to-r from-coni-pink to-[#d44970] shadow-lg shadow-coni-pink/30 hover:shadow-xl hover:shadow-coni-pink/40 hover:scale-105 transition-all duration-300"
+            >
+              <MessageCircle size={20} />
+              Agendar consulta
+            </button>
+            <a
+              href="https://www.google.com/search?q=Dra.+Coni+Waldow&stick=H4sIAAAAAAAA_-NgU1I1qDAzNzFJMUmyNExNMzUySrO0MqiwMEq2NDY1MjYxSzY1TjIwXMQq4FKUqKfgnJ-XqRCemJOSXw4AlcfPjDwAAAA&hl=pt-BR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-inter font-semibold text-coni-pink bg-white border-2 border-coni-pink/30 hover:border-coni-pink hover:bg-coni-light-pink/30 hover:scale-105 transition-all duration-300"
+            >
+              <GoogleLogo />
+              Ver todas no Google
+            </a>
+          </div>
           <p className="mt-4 text-sm text-coni-text-muted font-inter">
             Atendimento personalizado pelo WhatsApp
           </p>
