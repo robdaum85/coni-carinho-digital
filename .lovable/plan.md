@@ -1,124 +1,71 @@
+# Nova seção premium de Depoimentos (estilo Google Reviews)
 
+Substituir a seção atual `ModernTestimonials.tsx` por uma versão premium, com os relatos reais que você enviou já integrados (Opção C — curadoria manual, sem API).
 
-# Integrar Palavras-Chave nos Microdados e SEO
+## Estrutura da nova seção
 
-## Palavras-chave a trabalhar
+### 1. Header
+- Título: "Histórias reais de acolhimento e confiança" (fonte Playfair, tom modern-primary)
+- Subtítulo conforme briefing
+- Animação `fade-in-up` no scroll (IntersectionObserver)
 
-Baseado nas imagens enviadas, as seguintes palavras-chave serao incorporadas:
+### 2. Faixa de métricas
+Faixa horizontal elegante com 4 itens, ícones lucide + texto curto:
+- ⭐ "Avaliações 5 estrelas"
+- 🤍 "Atendimento humanizado"
+- 👶 "Pré-natal e parto acolhedor"
+- 🛡️ "Segurança em toda gestação"
 
-- humanizacao do parto / humanizacao no parto / humanizacao parto
-- parto humanizado artigo / definicao de parto humanizado
-- parto aquatico
-- parto humanitario
-- parto humanizado preco / preco parto humanizado
-- parto assistido
-- parto naturalizado
-- parto cocoras
-- parto doula
-- obstetra humanizado
-- riscos no parto
+Em mobile vira grid 2x2.
 
----
+### 3. Grid/Carrossel de depoimentos
+Cards no estilo Google Reviews:
+- Avatar circular com inicial da paciente sobre fundo rosé/dourado suave
+- Nome em negrito
+- 5 estrelas douradas (`text-amber-400`)
+- Selo discreto "Google Reviews" com mini logo do G colorido (SVG inline, sem dependência externa)
+- Aspas decorativas grandes em rosé translúcido no canto
+- Texto do depoimento em itálico
+- Hover: leve elevação + sombra mais profunda + borda rosé
 
-## Alteracoes Planejadas
+Layout:
+- Desktop: grid 3 colunas
+- Tablet: 2 colunas
+- Mobile: carrossel swipeable (mantém lógica do componente atual)
 
-### 1. StructuredData.tsx - Enriquecer microdados com palavras-chave
+Os 8 depoimentos enviados (Bruna, Izadora, Gabriel, Mariana, Rachel, Sibele, Jassilane, Renata) entram como dados estáticos. Para a Bruna, que tem 3 trechos, uno em um único card com quebras suaves entre os trechos.
 
-**MedicalBusiness (description):** Incluir termos como "humanizacao do parto", "parto assistido", "parto naturalizado", "obstetra humanizado".
+### 4. Bloco de palavras-chave flutuantes
+Acima do CTA, conjunto de "tags" com leve animação flutuante (`animate-pulse` lento ou keyframe custom de translateY infinito):
+acolhimento • segurança • parto humanizado • empatia • cuidado • confiança • humanização
 
-**Physician (knowsAbout):** Expandir de 5 para ~15 itens incluindo: "Humanizacao do Parto", "Parto Assistido", "Parto Naturalizado", "Parto Aquatico", "Parto de Cocoras", "Parto com Doula", "Riscos no Parto", "Parto Humanitario".
+Pílulas com fundo bege/rosé translúcido, borda fina dourada, distribuídas de forma orgânica (não alinhadas).
 
-**availableService:** Adicionar novos servicos/procedimentos cobrindo os termos:
-- Parto Assistido
-- Parto Aquatico
-- Parto de Cocoras
-- Acompanhamento com Doula
+### 5. CTA final
+Botão grande "Agendar consulta" → mesmo padrão do `WhatsAppButton` (link `wa.me/5541998943285` com mensagem pré-preenchida). Estilo: gradiente rosé suave, ícone WhatsApp, hover scale.
 
-**FAQPage:** Adicionar 3-4 novas perguntas cobrindo termos ainda nao trabalhados:
-- "Qual o preco do parto humanizado?" (parto humanizado preco / preco parto humanizado)
-- "O que e parto aquatico e quais os beneficios?" (parto aquatico)
-- "Posso ter parto de cocoras?" (parto cocoras)
-- "Qual o papel da doula no parto?" (parto doula)
+## Estilo visual (tokens)
+- Fundo da seção: `#fdfaf8`
+- Acento rosé/dourado já existente no design system
+- Bordas: `rounded-2xl`
+- Sombras: `shadow-lg` → `shadow-xl` no hover
+- Tipografia: Playfair (títulos) + Inter (corpo)
 
-**MedicalWebPage (about):** Adicionar mais MedicalCondition/MedicalProcedure cobrindo os termos.
+Usarei tokens semânticos do `index.css` / `tailwind.config.ts`. Se faltar algum tom (dourado leve), adiciono ao design system em vez de hardcodar.
 
-**WebSite (description):** Enriquecer com palavras-chave adicionais.
+## SEO / Microdados
+Cada card recebe `itemScope itemType="https://schema.org/Review"` com `author`, `reviewBody`, `reviewRating` (5). No `StructuredData.tsx` atualizo `AggregateRating` para `ratingValue: 5, reviewCount: 8` refletindo os reais.
 
-### 2. ModernSEO.tsx - Expandir meta keywords e descricoes
+## Acessibilidade
+- `aria-label` no carrossel mobile e no CTA
+- Contraste verificado
+- Estrelas com `aria-hidden`, nota textual para leitores de tela
 
-**meta keywords:** Adicionar todas as novas palavras-chave:
-- humanizacao do parto, humanizacao no parto, parto aquatico, parto assistido, parto naturalizado, parto cocoras, parto doula, obstetra humanizado, riscos no parto, preco parto humanizado, parto humanitario, definicao de parto humanizado
+## Arquivos afetados
+| Arquivo | Mudança |
+|---------|---------|
+| `src/components/ModernTestimonials.tsx` | Reescrita completa com nova estrutura |
+| `src/components/StructuredData.tsx` | `AggregateRating` + 8 reviews reais no schema |
+| `src/index.css` ou `tailwind.config.ts` | Possível keyframe `float` para tags + token dourado leve, se necessário |
 
-**meta description:** Incorporar termos-chave naturalmente.
-
-**og:description e twitter:description:** Atualizar com termos relevantes.
-
-### 3. ModernFAQ.tsx - Adicionar novas perguntas
-
-Incluir as mesmas 3-4 perguntas novas no componente visual para que o conteudo corresponda ao schema FAQPage:
-
-- "Qual o preco do parto humanizado?" - Resposta sobre consulta particular, valores discutidos em consulta
-- "O que e parto aquatico?" - Explicacao sobre parto na agua e beneficios
-- "Posso ter parto de cocoras?" - Explicacao sobre posicoes verticais no parto
-- "Qual o papel da doula no parto humanizado?" - Explicacao sobre suporte da doula
-
-### 4. ModernServices.tsx - Termos nas descricoes
-
-Incorporar naturalmente palavras-chave nas descricoes dos servicos existentes:
-- "Parto humanizado": adicionar mencoes a parto assistido, parto naturalizado, humanizacao do parto
-- "Pre-natal": mencionar riscos no parto e acompanhamento
-
----
-
-## Resumo de Arquivos
-
-| Arquivo | Alteracao |
-|---------|-----------|
-| StructuredData.tsx | Expandir knowsAbout, availableService, FAQ, descricoes |
-| ModernSEO.tsx | Expandir keywords, descricoes |
-| ModernFAQ.tsx | Adicionar 3-4 novas perguntas |
-| ModernServices.tsx | Enriquecer descricoes com palavras-chave |
-
-**Nenhum arquivo novo sera criado. 4 arquivos serao modificados.**
-
----
-
-## Secao Tecnica
-
-### Novos itens em knowsAbout (Physician schema)
-```text
-Existentes:                    Novos:
-- Parto Humanizado             - Humanizacao do Parto
-- Obstetricia de Alto Risco    - Parto Assistido
-- Pre-natal Personalizado      - Parto Naturalizado
-- Ginecologia                  - Parto Aquatico
-- Metodos Contraceptivos       - Parto de Cocoras
-                               - Acompanhamento com Doula
-                               - Riscos no Parto
-                               - Obstetra Humanizado
-                               - Parto Humanitario
-```
-
-### Novos availableService
-```text
-- Parto Assistido: "Acompanhamento medico personalizado..."
-- Parto Aquatico: "Modalidade de parto na agua..."
-- Parto de Cocoras: "Parto em posicao vertical..."
-- Acompanhamento com Doula: "Integracao com doula..."
-```
-
-### Novas FAQs (schema + componente visual)
-```text
-Q: "Qual o preco do parto humanizado em Curitiba?"
-A: Valores discutidos em consulta, atendimento particular personalizado...
-
-Q: "O que e parto aquatico e posso ter um?"
-A: Parto na agua com beneficios de relaxamento...
-
-Q: "Posso ter parto de cocoras ou em outras posicoes?"
-A: Posicoes verticais como cocoras facilitam...
-
-Q: "Qual o papel da doula no parto humanizado?"
-A: A doula oferece suporte emocional e fisico...
-```
-
+Nenhum arquivo novo obrigatório (mantenho tudo dentro de `ModernTestimonials.tsx` para simplificar). Se ficar grande demais, extraio subcomponentes `ReviewCard` e `FloatingKeywords` em arquivos separados na mesma pasta.
