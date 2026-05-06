@@ -287,9 +287,6 @@ const ModernTestimonials = () => {
               Ver todas no Google
             </a>
           </div>
-          <p className="mt-4 text-sm text-coni-text-muted font-inter">
-            Atendimento personalizado pelo WhatsApp
-          </p>
         </div>
       </div>
     </section>
